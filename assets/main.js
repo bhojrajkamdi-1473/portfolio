@@ -92,23 +92,74 @@
     doc.addEventListener("keydown", function (e) { if (e.key === "Escape") closeMenu(); });
   }
 
-  /* ---------- Reveal on scroll ---------- */
+  /* ---------- Reveal on scroll ----------
+     Fade-up on IntersectionObserver: 600ms settle curve, 60/120ms group
+     steps, threshold 0.15, fires once. Observer reports current state on
+     observe, so mid-scroll refreshes animate in immediately. will-change
+     is released after each transition to keep GPU layers minimal. */
   var revealEls = doc.querySelectorAll(".rv");
+  function rvDone(el) { el.style.willChange = "auto"; }
   if ("IntersectionObserver" in window && !reducedMotion) {
     var observer = new IntersectionObserver(
       function (entries) {
         entries.forEach(function (entry) {
           if (entry.isIntersecting) {
-            entry.target.classList.add("in");
-            observer.unobserve(entry.target);
+            var t = entry.target;
+            t.classList.add("in");
+            t.addEventListener("transitionend", function () { rvDone(t); }, { once: true });
+            observer.unobserve(t);
           }
         });
       },
-      { threshold: 0.12, rootMargin: "0px 0px -48px 0px" }
+      { threshold: 0.15, rootMargin: "0px 0px -40px 0px" }
     );
-    revealEls.forEach(function (el) { observer.observe(el); });
+    revealEls.forEach(function (el) {
+      el.addEventListener("transitionend", function () { rvDone(el); }, { once: true });
+      observer.observe(el);
+    });
   } else {
-    revealEls.forEach(function (el) { el.classList.add("in"); });
+    revealEls.forEach(function (el) { el.classList.add("in"); rvDone(el); });
+  }
+
+  /* ---------- Evidence counters ----------
+     Fire-once count-up (cubic ease-out, en-IN grouping). The "+" suffix
+     is appended only at the final value. Final numbers stay in the HTML,
+     so no-JS and reduced-motion readers see the true figures. */
+  function animateCounter(el) {
+    var target = parseInt(el.getAttribute("data-counter-target"), 10);
+    var duration = parseInt(el.getAttribute("data-counter-duration") || "1200", 10);
+    var suffix = el.getAttribute("data-counter-suffix") || "";
+    if (!target || reducedMotion) {
+      el.textContent = target.toLocaleString("en-IN") + suffix;
+      return;
+    }
+    var start = null;
+    function tick(now) {
+      if (start === null) start = now;
+      var p = Math.min((now - start) / duration, 1);
+      var eased = 1 - Math.pow(1 - p, 3);
+      var value = Math.round(eased * target);
+      el.textContent = value.toLocaleString("en-IN");
+      if (p < 1) requestAnimationFrame(tick);
+      else el.textContent = target.toLocaleString("en-IN") + suffix;
+    }
+    requestAnimationFrame(tick);
+  }
+
+  var counterEls = doc.querySelectorAll("[data-counter]");
+  if ("IntersectionObserver" in window && !reducedMotion) {
+    var counterIO = new IntersectionObserver(
+      function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            animateCounter(entry.target);
+            counterIO.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.5 }
+    );
+    counterEls.forEach(function (el) { counterIO.observe(el); });
   }
 
   /* ---------- Hero depth parallax ---------- */
@@ -270,7 +321,7 @@
     }, 60);
   }
 
-  function ipStop(stage) {
+  function ipStop(stage, silent) {
     var st = stage._ip;
     if (st.timer) { clearInterval(st.timer); st.timer = null; }
     st.playing = false;
@@ -278,6 +329,7 @@
     var box = stage.parentNode;
     var bar = box.querySelector(".ip-progress i");
     if (bar) { bar.style.transition = "none"; bar.style.width = "0%"; }
+    if (silent) return;
     var pb = box.querySelector("[data-ip-pause]");
     if (pb) { pb.setAttribute("aria-label", "Play slideshow"); pb.setAttribute("aria-pressed", "true"); pb.textContent = "▶"; }
     var badge = stage.querySelector("[data-ip-paused]");
@@ -286,6 +338,7 @@
 
   function ipPlay(stage) {
     var st = stage._ip;
+    if (reducedMotion) { ipStop(stage); return; }
     if (st.userPaused || doc.hidden || !st.visible) return;
     st.playing = true;
     stage.classList.add("playing");
@@ -370,7 +423,7 @@
         if (!stage) return;
         stage._ip.visible = en.isIntersecting;
         if (en.isIntersecting) { if (!stage._ip.userPaused) ipPlay(stage); }
-        else ipStop(stage);
+        else ipStop(stage, true);
       });
     }, { threshold: 0.2 });
     ipStages.forEach(function (s) { ipIO.observe(s); });
@@ -378,7 +431,7 @@
 
   doc.addEventListener("visibilitychange", function () {
     ipStages.forEach(function (s) {
-      if (doc.hidden) ipStop(s);
+      if (doc.hidden) ipStop(s, true);
       else if (!s._ip.userPaused && s._ip.visible) ipPlay(s);
     });
   });
@@ -429,6 +482,33 @@
     a.target = "_blank";
     a.rel = "noopener noreferrer";
   });
+
+  /* ---------- Scrollspy: gold underline on the section in view ----------
+     Only on pages whose nav uses same-page anchors; harmless elsewhere. */
+  (function scrollspy() {
+    var links = [].slice.call(doc.querySelectorAll(".nav a[href^='#']"));
+    if (!links.length || !("IntersectionObserver" in window)) return;
+    var byId = {};
+    links.forEach(function (a) {
+      var id = a.getAttribute("href").slice(1);
+      var sec = id && doc.getElementById(id);
+      if (sec) byId[id] = byId[id] || { sec: sec, links: [] };
+      if (sec) byId[id].links.push(a);
+    });
+    var ids = Object.keys(byId);
+    if (!ids.length) return;
+    function clear() { links.forEach(function (a) { a.removeAttribute("aria-current"); }); }
+    var spy = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) {
+        if (!en.isIntersecting) return;
+        clear();
+        (byId[en.target.id].links || []).forEach(function (a) {
+          a.setAttribute("aria-current", "page");
+        });
+      });
+    }, { rootMargin: "-40% 0px -55% 0px", threshold: 0 });
+    ids.forEach(function (id) { spy.observe(byId[id].sec); });
+  })();
 
   /* ---------- Launch QA ---------- */
   var html = doc.documentElement.outerHTML;
