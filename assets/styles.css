@@ -1989,3 +1989,13 @@ a.contact-value .arrow { color: var(--bronze); font-family: var(--sans); }
   #work .case-title { font-size: clamp(22px, 7vw, 32px); }
   .project-drive-note { align-items: flex-start; padding: 15px; }
 }
+
+
+/* Semester 3 direct course-report links — separate from the featured case studies. */
+.live-project-links { margin-top: 18px; margin-bottom: 30px; padding: 18px 20px; border: 1px solid rgba(184,139,85,.32); border-radius: 12px; background: rgba(184,139,85,.055); }
+.live-project-heading { margin: 0 0 12px; color: var(--ink); font-size: 11px; font-weight: 750; letter-spacing: .13em; text-transform: uppercase; }
+.live-project-grid { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 8px; }
+.live-project-grid a { display: flex; align-items: center; justify-content: space-between; gap: 8px; min-height: 42px; padding: 10px 11px; border: 1px solid rgba(120,120,120,.2); border-radius: 6px; color: var(--ink); text-decoration: none; font-size: 12px; line-height: 1.4; }
+.live-project-grid a:hover { border-color: rgba(184,139,85,.65); background: rgba(184,139,85,.08); }
+@media (max-width: 900px) { .live-project-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 480px) { .live-project-grid { grid-template-columns: 1fr; } .live-project-links { padding: 14px; } }
