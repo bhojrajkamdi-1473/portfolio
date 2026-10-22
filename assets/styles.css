@@ -156,7 +156,7 @@ button { font-family: inherit; }
 }
 .rail--left { left: 18px; transform: translateY(-50%) rotate(180deg); writing-mode: vertical-rl; }
 .rail--right { right: 18px; transform: translateY(-50%); writing-mode: vertical-rl; }
-@media (max-width: 1300px) { .rail { display: none; } }
+@media (max-width: 1700px) { .rail { display: none; } }
 
 /* ---------- 3. Type utilities ---------- */
 
