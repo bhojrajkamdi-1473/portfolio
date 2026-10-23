@@ -12,14 +12,14 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300..800&family=Newsreader:ital,opsz,wght@0,6..72,300..700;1,6..72,300..700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/styles.css?v=4">
-  <noscript><style>.rv{opacity:1 !important;transform:none !important;}.acc-panel,.lib-detail{grid-template-rows:1fr;}</style></noscript>
+  <link rel="stylesheet" href="assets/styles.css?v=6">
+  <noscript><style>.rv{opacity:1 !important;transform:none !important;}.acc-panel,.lib-detail{grid-template-rows:1fr !important;}</style></noscript>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Person",
     "name": "Bhojraj Kamdi",
-    "description": "PGDM Finance '27 — audit and accounts internship, equity research internship, independent market study, nine documented research projects.",
+    "description": "PGDM Finance '27 — audit and accounts internship, equity research internship, independent market study, fourteen documented research projects.",
     "sameAs": ["https://www.linkedin.com/in/bhojrajkamdi"],
     "alumniOf": { "@type": "CollegeOrUniversity", "name": "RTM Nagpur University" },
     "affiliation": { "@type": "CollegeOrUniversity", "name": "Imperial School of Banking and Management Studies, Pune" }
@@ -28,498 +28,679 @@
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
-  <span class="rail rail--left" aria-hidden="true">PGDM-Finance'27</span>
-  <span class="rail rail--right" aria-hidden="true">Pune · India</span>
 
-  <header class="topbar" id="topbar">
-    <a class="brand" href="index.html">Bhojraj Kamdi<span class="brand-dot">.</span></a>
-    <nav class="nav" aria-label="Primary">
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#work">Projects</a></li>
-        <li><a href="#approach">Approach</a></li>
-        <li><a href="#credentials">Credentials</a></li>
-      </ul>
-    </nav>
-    <div class="topbar-actions">
-      <a class="btn btn-solid btn-sm" href="#contact">Contact<span class="arrow">&nbsp;↗</span></a>
-      <a class="btn btn-ghost btn-sm" href="https://docs.google.com/document/d/1BFeB2oi3oYkQRqjwEmUpC3M__p_ACSpZ/edit" target="_blank" rel="noopener noreferrer">Resume<span class="arrow">&nbsp;↗</span></a>
+  <header class="masthead" id="topbar">
+    <div class="masthead-inner">
+      <a class="wordmark" href="index.html" aria-label="Bhojraj Kamdi — home">
+        <span class="wordmark-name">Bhojraj Kamdi</span>
+        <span class="wordmark-meta">Finance · Audit · Research</span>
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <ul>
+          <li><a href="#work"><span class="nav-num">01</span>Work</a></li>
+          <li><a href="projects.html"><span class="nav-num">02</span>Archive</a></li>
+          <li><a href="#experience"><span class="nav-num">03</span>Experience</a></li>
+          <li><a href="#credentials"><span class="nav-num">04</span>Credentials</a></li>
+          <li><a href="#about"><span class="nav-num">05</span>About</a></li>
+        </ul>
+      </nav>
+      <div class="masthead-actions">
+        <a class="btn btn--quiet btn--sm" href="https://docs.google.com/document/d/1BFeB2oi3oYkQRqjwEmUpC3M__p_ACSpZ/edit" target="_blank" rel="noopener noreferrer">CV <span class="arrow">↗</span></a>
+        <a class="btn btn--solid btn--sm" href="#contact">Contact <span class="arrow">↗</span></a>
+      </div>
+      <button class="menu-btn" id="navToggle" aria-expanded="false" aria-label="Open menu" aria-controls="mobileMenu">
+        Menu
+        <span class="menu-icon" aria-hidden="true"><i></i><i></i></span>
+      </button>
     </div>
-    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-label="Open menu" aria-controls="mobileMenu">
-      <span class="bar"></span>
-      <span class="bar"></span>
-    </button>
   </header>
 
-  <div class="mobile-menu" id="mobileMenu">
+  <div class="menu-panel" id="mobileMenu">
     <nav aria-label="Mobile">
-      <a href="#about"><span class="mnum">01</span>About</a>
-      <a href="#experience"><span class="mnum">02</span>Experience</a>
-      <a href="#work"><span class="mnum">03</span>Projects</a>
-      <a href="#approach"><span class="mnum">04</span>Approach</a>
-      <a href="#credentials"><span class="mnum">05</span>Credentials</a>
-      <a href="#contact"><span class="mnum">06</span>Contact</a>
-      <a href="https://docs.google.com/document/d/1BFeB2oi3oYkQRqjwEmUpC3M__p_ACSpZ/edit" target="_blank" rel="noopener noreferrer"><span class="mnum">07</span>Resume ↗</a>
+      <a href="#work"><span class="menu-num">01</span>Work</a>
+      <a href="projects.html"><span class="menu-num">02</span>Archive</a>
+      <a href="#experience"><span class="menu-num">03</span>Experience</a>
+      <a href="#credentials"><span class="menu-num">04</span>Credentials</a>
+      <a href="#about"><span class="menu-num">05</span>About</a>
+      <a href="#contact"><span class="menu-num">06</span>Contact</a>
+      <a href="https://docs.google.com/document/d/1BFeB2oi3oYkQRqjwEmUpC3M__p_ACSpZ/edit" target="_blank" rel="noopener noreferrer"><span class="menu-num">07</span>Resume ↗</a>
     </nav>
-    <div class="mm-actions">
+    <div class="menu-foot">
       <a href="https://www.linkedin.com/in/bhojrajkamdi" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
-      <a href="https://docs.google.com/document/d/1BFeB2oi3oYkQRqjwEmUpC3M__p_ACSpZ/edit" target="_blank" rel="noopener noreferrer">Resume</a>
+      <a href="mailto:bhojrajkamdi14@gmail.com">Email</a>
+      <span>Pune, India</span>
     </div>
   </div>
 
-  <main id="main">
-    <!-- 01 / IDENTITY -->
+  <main id="main" tabindex="-1">
+    <!-- HERO / IDENTITY -->
     <section class="hero" aria-labelledby="hero-name">
-      <div class="container hero-inner">
-        <div class="hero-copy">
-          <p class="hero-eyebrow anim">Finance Portfolio</p>
-          <h1 class="hero-name anim" id="hero-name">Bhojraj Kamdi.</h1>
-          <p class="hero-tag anim anim-2"><span class="rule" aria-hidden="true"></span>PGDM-FINANCE'27</p>
-          <p class="hero-position anim anim-2">Audit &amp; Assurance · Financial Analysis · Equity Research</p>
-          <p class="hero-availability anim anim-2"><span class="avail-dot" aria-hidden="true"></span>Graduating 2027 · Open to opportunities</p>
-          <p class="hero-areas anim anim-2">Audit intern who vouched 3,000+ transactions at a CA firm. Building depth in financial analysis and equity research alongside.</p>
-        <div class="hero-actions anim anim-4">
-            <a class="btn btn-solid" href="#work">Explore selected work<span class="arrow"> ↓</span></a>
-            <a class="btn btn-ghost" href="https://docs.google.com/document/d/1BFeB2oi3oYkQRqjwEmUpC3M__p_ACSpZ/edit" target="_blank" rel="noopener noreferrer">Resume<span class="arrow"> ↗</span></a>
-          </div>
-          <div class="hero-utils anim anim-5">
-            <a href="#work">View work →</a>
-            <a href="https://www.linkedin.com/in/bhojrajkamdi" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
-            <a href="#contact">Contact →</a>
-          </div>
-          <p class="hero-langs anim anim-5">English · Hindi · Marathi</p>
-        </div>
-
-        <div class="hero-media">
-          <div class="portrait-stage">
-            <span class="portrait-index" aria-hidden="true">01 / Identity</span>
-            <span class="portrait-vlabel" aria-hidden="true">Finance · Audit · Research</span>
-            <figure class="photo-plate">
-              <img class="portrait" src="assets/bhojraj-kamdi-profile.webp" alt="Portrait of Bhojraj Kamdi" width="722" height="928" fetchpriority="high" decoding="async">
-            </figure>
-            <span class="portrait-hlabel" aria-hidden="true">Finance · Audit · Research</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- 02 / EVIDENCE -->
-    <section class="section section--ruled" aria-label="Selected figures">
       <div class="container">
-        <div class="sec-head rv">
-          <p class="sec-label"><span class="num">02 /</span> Key Highlights</p>
+        <div class="hero-inner">
+          <div class="hero-copy">
+            <p class="eyebrow anim">Finance portfolio · 2026</p>
+            <h1 class="display anim" id="hero-name">
+              <span class="display-line">Bhojraj</span>
+              <span class="display-line display-line--accent">Kamdi</span>
+            </h1>
+            <p class="hero-role anim anim-2">Audit &amp; assurance, <span>equity research</span> and financial analysis — grounded in evidence.</p>
+            <p class="hero-lede anim anim-2">PGDM Finance candidate at Imperial School of Banking and Management Studies, Pune. Audit intern who vouched 3,000+ transactions at a CA firm, building depth in financial analysis and equity research alongside.</p>
+            <div class="hero-actions anim anim-4">
+              <a class="btn btn--solid" href="#work">Explore selected work <span class="arrow">↓</span></a>
+              <a class="btn btn--line" href="https://docs.google.com/document/d/1BFeB2oi3oYkQRqjwEmUpC3M__p_ACSpZ/edit" target="_blank" rel="noopener noreferrer">View resume <span class="arrow">↗</span></a>
+            </div>
+            <div class="hero-meta anim anim-5">
+              <div><span class="k">Programme</span><span class="v">PGDM — Finance · 2027</span></div>
+              <div><span class="k">Based</span><span class="v">Pune, India</span></div>
+              <div><span class="k">Languages</span><span class="v">English · Hindi · Marathi</span></div>
+              <div><span class="k">Status</span><span class="v hero-avail">Open to opportunities</span></div>
+            </div>
+          </div>
+
+          <div class="hero-media anim anim-3">
+            <div class="portrait-frame">
+              <img class="portrait-img" src="assets/bhojraj-kamdi-profile.webp" alt="Portrait of Bhojraj Kamdi" width="722" height="928" fetchpriority="high" decoding="async">
+            </div>
+            <p class="portrait-caption"><span>01 / Identity</span><span>Finance · Audit · Research</span></p>
+          </div>
         </div>
-        <div class="proof-list">
-          <div class="proof-row rv">
-            <span class="proof-index" aria-hidden="true">01</span>
-            <span class="proof-num tnum" data-counter data-counter-target="3000" data-counter-suffix="+" data-counter-duration="1200">3,000+</span>
-            <span class="proof-label">Financial Transactions Verified</span>
-          </div>
-          <div class="proof-row rv d1">
-            <span class="proof-index" aria-hidden="true">02</span>
-            <span class="proof-num tnum" data-counter data-counter-target="1000" data-counter-suffix="+" data-counter-duration="1000">1,000+</span>
-            <span class="proof-label">Ledger Accounts Scrutinized</span>
-          </div>
-          <div class="proof-row rv d2">
-            <span class="proof-index" aria-hidden="true">03</span>
-            <span class="proof-num tnum" data-counter data-counter-target="100" data-counter-suffix="K+" data-counter-duration="800">100K+</span>
-            <span class="proof-label">LinkedIn Impressions</span>
-          </div>
+
+        <div class="disciplines" aria-label="Professional areas">
+          <span><b>Audit</b> &amp; Assurance</span>
+          <span>Financial Analysis</span>
+          <span>Equity Research</span>
+          <span>Capital Markets</span>
         </div>
       </div>
     </section>
 
-    <!-- 03 / TOOLS & SKILLS -->
-    <section class="section section--stone" aria-labelledby="tools-title">
+    <!-- EVIDENCE -->
+    <section class="section section--tight section--ruled" aria-label="Selected figures">
       <div class="container">
-        <div class="sec-head rv">
-          <p class="sec-label"><span class="num">03 /</span> Tools &amp; Skills</p>
-          <h2 class="sec-title" id="tools-title">Tools &amp; Skills.</h2>
+        <div class="ledger">
+          <div class="ledger-item rv">
+            <span class="ledger-num tnum" data-counter data-counter-target="3000" data-counter-suffix="+" data-counter-duration="1200">3,000+</span>
+            <span class="ledger-label">Financial transactions verified</span>
+            <span class="ledger-note">Vouching and verification during audit-support work at G M Achhra &amp; Associates.</span>
+          </div>
+          <div class="ledger-item rv d1">
+            <span class="ledger-num tnum" data-counter data-counter-target="1000" data-counter-suffix="+" data-counter-duration="1000">1,000+</span>
+            <span class="ledger-label">Ledger accounts scrutinised</span>
+            <span class="ledger-note">Ledger scrutiny, reconciliations and supporting documentation.</span>
+          </div>
+          <div class="ledger-item rv d2">
+            <span class="ledger-num tnum" data-counter data-counter-target="100" data-counter-suffix="K+" data-counter-duration="800">100K+</span>
+            <span class="ledger-label">LinkedIn impressions</span>
+            <span class="ledger-note">Finance writing and commentary published on LinkedIn.</span>
+          </div>
         </div>
-        <ul class="tools-app rv" aria-label="Tools and where they were applied">
-          <li><b>TallyPrime</b><span>Accounting entries · Books maintenance — G M Achhra audit work</span></li>
-          <li><b>Excel</b><span>GST reconciliation · Transaction analysis · Ratio analysis · Two-year projections — audit work &amp; Tech Mahindra analysis</span></li>
-          <li><b>Power BI</b><span>Analytics learning exposure — coursework</span></li>
-          <li><b>Financial Modelling</b><span>Financial statement &amp; projection work — Tech Mahindra projections, DCF exercises</span></li>
-          <li><b>GST Records</b><span>GST-related verification during audit work</span></li>
-          <li><b>Audit Documentation</b><span>Working papers · Supporting evidence — 3,000+ transactions, 1,000+ ledgers</span></li>
-        </ul>
       </div>
     </section>
 
-    <!-- 04 / EXPERIENCE -->
-    <section class="section" id="experience" aria-labelledby="exp-title">
-      <div class="container">
-        <div class="sec-head rv">
-          <p class="sec-label"><span class="num">04 /</span> Experience</p>
-          <h2 class="sec-title" id="exp-title">Professional experience, stated plainly.</h2>
-        </div>
-
-        <p class="exp-group-label rv">Professional experience</p>
-        <article class="exp-card rv" aria-label="Audit internship: G M Achhra and Associates">
-          <span class="exp-year">2026</span>
-          <div>
-          <div class="exp-card-head">
-            <div>
-              <h3>G M Achhra &amp; Associates</h3>
-              <p class="exp-card-role">Audit &amp; Accounts Intern <span>May 2026 — July 2026</span></p>
-            </div>
-          </div>
-          <p class="star-text">Supported live client-engagement audit work through transaction verification, substantive testing, ledger scrutiny, GST verification and accounting documentation.</p>
-          <ul class="action-list">
-            <li>Verified purchase, sales, payment, receipt and journal transactions against invoices and bank statements.</li>
-            <li>Scrutinised 1,000+ ledger accounts and verified 3,000+ financial transactions as part of audit-support procedures.</li>
-            <li>Worked with TallyPrime and Excel for accounting entries, reconciliations, GST-related verification and supporting documentation.</li>
-          </ul>
-          <div class="result-strip">
-            <div class="result-item"><b class="tnum">3,000+</b><span>Financial transactions verified</span></div>
-            <div class="result-item"><b class="tnum">1,000+</b><span>Ledger accounts scrutinized</span></div>
-          </div>
-          <p class="star-text">Built practical understanding of how transaction-level evidence, reconciliations and supporting documentation contribute to reliable audit working papers.</p>
-          <p><a class="info-tab" href="experience.html">View internship info ↗</a></p>
-          </div>
-        </article>
-
-        <p class="exp-group-label rv">Research &amp; market experience</p>
-        <article class="exp-card rv" aria-label="Equity research internship: Finsckool">
-          <span class="exp-year">2025</span>
-          <div>
-          <div class="exp-card-head">
-            <div>
-              <h3>Finsckool</h3>
-              <p class="exp-card-role">Equity Research &amp; Investment Banking Intern <span>July 2025 — August 2025 · Remote</span></p>
-            </div>
-            <span class="tl-kind">Internship · Remote</span>
-          </div>
-          <p class="star-text">Analysed financial statements and business performance while applying fundamental and technical analysis, including RSI, MACD and price-action techniques.</p>
-          <ul class="action-list">
-            <li>Financial statement and business-performance analysis.</li>
-            <li>Fundamental and technical analysis.</li>
-            <li>RSI, MACD and price-action application.</li>
-          </ul>
-          <p><a class="info-tab" href="experience.html">View internship info ↗</a></p>
-          </div>
-        </article>
-
-        <article class="exp-card rv" aria-label="Independent stock market research">
-          <span class="exp-year">2023 —</span>
-          <div>
-          <div class="exp-card-head">
-            <div>
-              <h3>Independent Stock Market Research / Trading</h3>
-              <p class="exp-card-role">Independent Market Experience <span>July 2023 — Present</span></p>
-            </div>
-            <span class="tl-kind">Independent · Not employment</span>
-          </div>
-          <p class="star-text">Self-directed equity-market research focused on technical analysis, price action, position sizing, stop discipline and trading-journal maintenance.</p>
-          <p class="star-text">Built market discipline through structured research, risk-management practice and maintaining a trading journal around market decisions.</p>
-          <p><a class="info-tab" href="experience.html">View research info ↗</a></p>
-          </div>
-        </article>
-
-        <p class="exp-group-label rv">Programmes &amp; other experience</p>
-        <article class="exp-card rv" aria-label="AI ML internship: Edunet Foundation">
-          <span class="exp-year">2025</span>
-          <div>
-          <div class="exp-card-head">
-            <div>
-              <h3>Edunet Foundation</h3>
-              <p class="exp-card-role">AI/ML Intern · AICTE + IBM · 6 weeks <span>June 2025 — July 2025 · Remote</span></p>
-            </div>
-          </div>
-          <p class="star-text">Completed a six-week AI/ML internship through the AICTE + IBM programme.</p>
-          <p><a class="info-tab" href="experience.html">View internship info ↗</a></p>
-          </div>
-        </article>
-
-        <article class="exp-card rv" aria-label="Digital content internship: Kshitiksha Foundation">
-          <span class="exp-year">2025</span>
-          <div>
-          <div class="exp-card-head">
-            <div>
-              <h3>Kshitiksha Foundation</h3>
-              <p class="exp-card-role">Digital Content &amp; Fundraising Intern <span>April 2025 — May 2025 · Remote</span></p>
-            </div>
-          </div>
-          <p class="star-text">Supported digital content and fundraising activities, including a seven-day fundraising campaign.</p>
-          <p><a class="info-tab" href="experience.html">View internship info ↗</a></p>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <!-- 05 / WORK -->
+    <!-- SELECTED WORK -->
     <section class="section" id="work" aria-labelledby="work-title">
       <div class="container">
         <div class="sec-head rv">
-          <p class="sec-label"><span class="num">05 /</span> Projects</p>
-          <h2 class="sec-title sec-title--wide" id="work-title">Selected work.</h2>
-          <p class="lead">Selected work across equity research, valuation, audit, financial reporting and portfolio construction. Expand any section for working detail.</p>
-        </div>
-
-        <div class="project-drive-note rv"><p><strong>Project files &amp; supporting reports</strong><br>Open the Google Drive project archive for the source reports and supporting materials. Individual reports already linked below open directly where a file-specific URL is available.</p><a href="https://drive.google.com/drive/u/0/folders/1Y1Z8Ju0RZBIP8k7EP5gQH0271rra957-" target="_blank" rel="noopener noreferrer">Open Google Drive archive <span aria-hidden="true">↗</span></a></div>
-        <div class="live-project-links rv" aria-label="Semester 3 live project reports">
-          <p class="live-project-heading">Semester 3 · Live project reports</p>
-          <div class="live-project-grid">
-            <a href="https://docs.google.com/document/d/18jf2dV0_WyICSwVGcLA0dVei4VEEnBnk/edit?usp=drive_link" target="_blank" rel="noopener noreferrer"><span>AI in Finance</span><span aria-hidden="true">↗</span></a>
-            <a href="https://docs.google.com/document/d/1vTkkLlFDqeDfH6Cy1lQAf2Il08225ZnY/edit?usp=drive_link" target="_blank" rel="noopener noreferrer"><span>Audit</span><span aria-hidden="true">↗</span></a>
-            <a href="https://docs.google.com/document/d/1Cy3-Fhz0zzeDlXy7143tufdGQLakAhRA/edit?usp=drive_link" target="_blank" rel="noopener noreferrer"><span>Financial Modelling & Valuation</span><span aria-hidden="true">↗</span></a>
-            <a href="https://docs.google.com/document/d/15_LNEUVA29AoEoxq4TP8MniRWhcfPKY-/edit?usp=drive_link" target="_blank" rel="noopener noreferrer"><span>Financial Reporting</span><span aria-hidden="true">↗</span></a>
-            <a href="https://docs.google.com/document/d/1UMdpb7_7EZrPmKCcKV2yx-humW3T3s7X/edit?usp=drive_link" target="_blank" rel="noopener noreferrer"><span>Investment Research</span><span aria-hidden="true">↗</span></a>
+          <p class="sec-label"><span class="sec-num">03</span>Selected work</p>
+          <div>
+            <h2 class="sec-title sec-title--wide" id="work-title">Research records, not a gallery.</h2>
+            <p class="sec-lead">Three detailed case studies across equity research, corporate actions and fund accounting. Each states the question, the method, the evidence and its limits. The complete archive holds fourteen records.</p>
+            <div class="sec-aside">
+              <a class="link-arrow" href="projects.html">Open the project archive <span class="arrow">→</span></a>
+              <a class="link-arrow" href="https://drive.google.com/drive/u/0/folders/1Y1Z8Ju0RZBIP8k7EP5gQH0271rra957-" target="_blank" rel="noopener noreferrer">Source reports on Drive <span class="arrow">↗</span></a>
+            </div>
           </div>
         </div>
-        <p class="exp-group-label rv">Featured case studies</p>
-        <article class="case case--dark rv" id="case-01">
-          <div class="case-top">
-            <span class="case-num">01</span>
-            <div>
-              <span class="case-type">Equity Research · Finsckool Internship</span>
-              <h3 class="case-title">Equity Research, IPO &amp; Financial Statement Analysis</h3>
-              <p class="case-lede">Building an equity view of listed companies — business model, financial statements and fundamentals, with technical context.</p>
-              <div class="sub-list">
-                <span><b>01A</b>IPO &amp; Secondary Market</span>
-                <span><b>01B</b>Financial Statements &amp; Forecasts</span>
-                <span><b>01C</b>Ratio Analysis</span>
+
+        <!-- 01 -->
+        <article class="record record--dark rv" id="case-01">
+          <div class="record-rail">
+            <span class="record-no">01</span>
+            <span class="record-cat">Research · Internship</span>
+            <span class="pill pill--gold">Selected</span>
+          </div>
+          <div class="record-body">
+            <p class="record-kicker">Equity Research · Finsckool Internship</p>
+            <h3 class="record-title">Equity Research, IPO &amp; Financial Statement Analysis</h3>
+            <p class="record-question">What drives the company — and do the numbers support the case?</p>
+
+            <div class="record-grid">
+              <div>
+                <div class="record-fields">
+                  <div class="field field--wide">
+                    <b>Objective</b>
+                    <span>Build an equity view of listed companies — business model, financial statements and fundamentals, with technical context — and translate company information into structured analysis.</span>
+                  </div>
+                  <div class="field">
+                    <b>Approach</b>
+                    <span>Business and financial-statement review combined with fundamental analysis and technical context (RSI, MACD, price action), developed during the Finsckool internship with IPO research framing.</span>
+                  </div>
+                  <div class="field">
+                    <b>Output</b>
+                    <span>Three sub-reports: IPO and secondary-market analysis (Patel Retail), financial statement and forecast analysis (Tech Mahindra), and ratio analysis (MRF).</span>
+                  </div>
+                </div>
+                <div class="note"><b>Why it matters —</b> demonstrates the ability to move from company information and financial statements to structured equity-analysis outputs.</div>
               </div>
-              <p class="case-finding"><b>Why it matters —</b> demonstrates the ability to move from company information and financial statements to structured equity-analysis outputs.</p>
-              <div class="case-cta"><div class="report-link-list"><div class="report-item"><span class="report-cap">01A · Patel Retail — IPO &amp; secondary market</span><a class="arrow-link" href="https://drive.google.com/file/d/1pGAY4Vr_cwJC33Z5CAIImhbXU2Av9RaV/view?usp=drive_link" target="_blank" rel="noopener noreferrer"><span>View report</span><span class="arrow">↗</span></a></div><div class="report-item"><span class="report-cap">01B · Tech Mahindra — FSA &amp; forecasts</span><a class="arrow-link" href="https://drive.google.com/file/d/13X6SglaG91yu_porTelERwR6Js7KmhCo/view?usp=drive_link" target="_blank" rel="noopener noreferrer"><span>View report</span><span class="arrow">↗</span></a></div><div class="report-item"><span class="report-cap">01C · MRF — ratio analysis</span><a class="arrow-link" href="https://docs.google.com/document/d/1b0azJOrUWnRysQ4T6offfiIfnlYEiOCq/edit?usp=drive_link&amp;ouid=113586569177191721533&amp;rtpof=true&amp;sd=true" target="_blank" rel="noopener noreferrer"><span>View report</span><span class="arrow">↗</span></a></div></div></div>
+
+              <div class="plate">
+                <div class="plate-head"><b>Research outputs</b><span>01A — 01C</span></div>
+                <div class="plate-figures">
+                  <div class="fig"><b>01A</b><span>Patel Retail · IPO &amp; secondary market</span></div>
+                  <div class="fig"><b>01B</b><span>Tech Mahindra · FSA &amp; forecasts</span></div>
+                  <div class="fig"><b>01C</b><span>MRF · Ratio analysis</span></div>
+                </div>
+                <div class="matrix">
+                  <div class="matrix-row"><b>01A</b><span class="mid">·</span><span>Listing to October 2025</span></div>
+                  <div class="matrix-row"><b>01B</b><span class="mid">·</span><span>FY2016 – FY2025, two-year projections</span></div>
+                  <div class="matrix-row"><b>01C</b><span class="mid">·</span><span>FY2017 – FY2025, projections to 2027 / 2030</span></div>
+                </div>
+                <p class="plate-foot">Periods as stated in the submitted reports.</p>
+              </div>
             </div>
-          </div>
-          <div class="acc">
-            <div class="acc-item">
-              <button class="acc-btn" data-acc-btn aria-expanded="false"><span>01A — IPO of Patel Retail Ltd.</span><span class="plus" aria-hidden="true"></span></button>
-              <div class="acc-panel"><div class="acc-panel-inner"><div>
-                How do IPO fundamentals translate into sustained secondary market performance? IPO documents and exchange price data, combining fundamental review (pricing, subscription, valuation vs peers) with technical context — RSI, MACD, moving averages, support-resistance, volume. Favourable fundamentals and reasonable valuation supported positive initial sentiment; sustained performance depended on market conditions, liquidity, institutional participation and technical confirmation. Full report covering listing to October 2025.
-                <div class="case-cta"><div class="report-link-list"><div class="report-item"><a class="arrow-link" href="https://drive.google.com/file/d/1pGAY4Vr_cwJC33Z5CAIImhbXU2Av9RaV/view?usp=drive_link" target="_blank" rel="noopener noreferrer"><span>View report</span><span class="arrow">↗</span></a></div></div></div>
-              </div></div></div>
+
+            <div class="report-links">
+              <div class="report-row">
+                <span class="report-cap">01A · Patel Retail — IPO &amp; secondary market</span>
+                <a class="report-link" href="https://drive.google.com/file/d/1pGAY4Vr_cwJC33Z5CAIImhbXU2Av9RaV/view?usp=drive_link" target="_blank" rel="noopener noreferrer">View report <span class="arrow">↗</span></a>
+              </div>
+              <div class="report-row">
+                <span class="report-cap">01B · Tech Mahindra — FSA &amp; forecasts</span>
+                <a class="report-link" href="https://drive.google.com/file/d/13X6SglaG91yu_porTelERwR6Js7KmhCo/view?usp=drive_link" target="_blank" rel="noopener noreferrer">View report <span class="arrow">↗</span></a>
+              </div>
+              <div class="report-row">
+                <span class="report-cap">01C · MRF — ratio analysis</span>
+                <a class="report-link" href="https://docs.google.com/document/d/1b0azJOrUWnRysQ4T6offfiIfnlYEiOCq/edit?usp=drive_link&amp;ouid=113586569177191721533&amp;rtpof=true&amp;sd=true" target="_blank" rel="noopener noreferrer">View report <span class="arrow">↗</span></a>
+              </div>
             </div>
-            <div class="acc-item">
-              <button class="acc-btn" data-acc-btn aria-expanded="false"><span>01B — Tech Mahindra Ltd.</span><span class="plus" aria-hidden="true"></span></button>
-              <div class="acc-panel"><div class="acc-panel-inner"><div>
-                How has Tech Mahindra’s financial health evolved over ten years, and what do trend patterns suggest? Ratio analysis across liquidity, profitability, leverage and market performance over FY2016–FY2025, with trend analysis and two-year forward projections. Liquidity stayed above the 1:1 benchmark throughout; gross margin held 60–63%; operating margin dipped to 4.40% in 2023–24 with partial recovery in 2025. Full report with two-year projections.
-                <div class="case-cta"><div class="report-link-list"><div class="report-item"><a class="arrow-link" href="https://drive.google.com/file/d/13X6SglaG91yu_porTelERwR6Js7KmhCo/view?usp=drive_link" target="_blank" rel="noopener noreferrer"><span>View report</span><span class="arrow">↗</span></a></div></div></div>
-              </div></div></div>
-            </div>
-            <div class="acc-item">
-              <button class="acc-btn" data-acc-btn aria-expanded="false"><span>01C — MRF Limited</span><span class="plus" aria-hidden="true"></span></button>
-              <div class="acc-panel"><div class="acc-panel-inner"><div>
-                How did MRF perform across economic cycles — pre-COVID, pandemic, commodity inflation, recovery? Nine-year ratio analysis (FY2017–FY2025) across liquidity, profitability, leverage, valuation and dividend policy, with CAGR-based projections to 2027 and 2030. Revenue more than doubled (₹13,412 Cr to ₹28,152 Cr); margins compressed sharply in 2022–23 then recovered; debt dependence reduced materially. Full report with ratio tables and projections.
-                <div class="case-cta"><div class="report-link-list"><div class="report-item"><a class="arrow-link" href="https://docs.google.com/document/d/1b0azJOrUWnRysQ4T6offfiIfnlYEiOCq/edit?usp=drive_link&amp;ouid=113586569177191721533&amp;rtpof=true&amp;sd=true" target="_blank" rel="noopener noreferrer"><span>View report</span><span class="arrow">↗</span></a></div></div></div>
-              </div></div></div>
+
+            <div class="acc">
+              <div class="acc-item">
+                <button class="acc-btn" data-acc-btn aria-expanded="false"><span>The question</span><span class="plus" aria-hidden="true"></span></button>
+                <div class="acc-panel"><div class="acc-panel-inner"><div>How do IPO fundamentals translate into sustained secondary-market performance? IPO documents and exchange price data, combining fundamental review (pricing, subscription, valuation vs peers) with technical context — RSI, MACD, moving averages, support-resistance, volume. Favourable fundamentals and reasonable valuation supported positive initial sentiment; sustained performance depended on market conditions, liquidity, institutional participation and technical confirmation. Full report covering listing to October 2025.</div></div></div>
+              </div>
+              <div class="acc-item">
+                <button class="acc-btn" data-acc-btn aria-expanded="false"><span>01A — IPO of Patel Retail Ltd.</span><span class="plus" aria-hidden="true"></span></button>
+                <div class="acc-panel"><div class="acc-panel-inner"><div>How do IPO fundamentals translate into sustained secondary market performance? IPO documents and exchange price data, combining fundamental review (pricing, subscription, valuation vs peers) with technical context — RSI, MACD, moving averages, support-resistance, volume. Favourable fundamentals and reasonable valuation supported positive initial sentiment; sustained performance depended on market conditions, liquidity, institutional participation and technical confirmation.</div></div></div>
+              </div>
+              <div class="acc-item">
+                <button class="acc-btn" data-acc-btn aria-expanded="false"><span>01B — Tech Mahindra Ltd.</span><span class="plus" aria-hidden="true"></span></button>
+                <div class="acc-panel"><div class="acc-panel-inner"><div>How has Tech Mahindra’s financial health evolved over ten years, and what do trend patterns suggest? Ratio analysis across liquidity, profitability, leverage and market performance over FY2016–FY2025, with trend analysis and two-year forward projections. Liquidity stayed above the 1:1 benchmark throughout; gross margin held 60–63%; operating margin dipped to 4.40% in 2023–24 with partial recovery in 2025. Full report with two-year projections.</div></div></div>
+              </div>
+              <div class="acc-item">
+                <button class="acc-btn" data-acc-btn aria-expanded="false"><span>01C — MRF Limited</span><span class="plus" aria-hidden="true"></span></button>
+                <div class="acc-panel"><div class="acc-panel-inner"><div>How did MRF perform across economic cycles — pre-COVID, pandemic, commodity inflation, recovery? Nine-year ratio analysis (FY2017–FY2025) across liquidity, profitability, leverage, valuation and dividend policy, with CAGR-based projections to 2027 and 2030. Revenue more than doubled (₹13,412 Cr to ₹28,152 Cr); margins compressed sharply in 2022–23 then recovered; debt dependence reduced materially. Full report with ratio tables and projections.</div></div></div>
+              </div>
             </div>
           </div>
         </article>
 
-        <article class="case rv" id="case-05">
-          <div class="case-top">
-            <span class="case-num">05</span>
-            <div>
-              <span class="case-type">Capital Markets · Jindal Worldwide Ltd.</span>
-              <h3 class="case-title">Corporate Actions — Financial Impact</h3>
-              <p><span class="tl-kind">Academic project · Not investment advice</span></p>
-              <p class="case-lede">What was the financial impact of the 4:1 bonus issue? Traced through announcement, record date (28 February 2025) and entitlement mechanics, then measured on capital and per-share figures.</p>
-              <p class="case-finding"><b>Finding —</b> 4:1 bonus issue capitalised ₹80.21 crore of reserves into share capital; EPS declined 84.8% and BVPS ~78% on the expanded share count.</p>
-              <p class="case-finding"><b>Why it matters —</b> demonstrates the ability to translate a corporate action into changes in capital structure and per-share financial metrics.</p>
-              <div class="case-cta"><div class="report-link-list"><div class="report-item"><a class="arrow-link" href="https://docs.google.com/document/d/1-ST0W2-EolFUOAw8sI0Gc8BhKvERcQRi/edit?usp=drive_link&amp;ouid=113586569177191721533&amp;rtpof=true&amp;sd=true" target="_blank" rel="noopener noreferrer"><span>View report</span><span class="arrow">↗</span></a></div></div></div>
-            </div>
+        <!-- 05 -->
+        <article class="record rv" id="case-05">
+          <div class="record-rail">
+            <span class="record-no">05</span>
+            <span class="record-cat">Capital Markets · Academic</span>
+            <span class="pill">Academic</span>
           </div>
-          <div class="acc">
-            <div class="acc-item">
-              <button class="acc-btn" data-acc-btn aria-expanded="false"><span>The question</span><span class="plus" aria-hidden="true"></span></button>
-              <div class="acc-panel"><div class="acc-panel-inner"><div>What was the financial impact of the 4:1 bonus issue on shareholder wealth, capital structure, EPS and market valuation?</div></div></div>
+          <div class="record-body">
+            <p class="record-kicker">Capital Markets · Jindal Worldwide Ltd.</p>
+            <h3 class="record-title">Corporate Actions — Financial Impact</h3>
+            <p class="record-question">What was the financial impact of the 4:1 bonus issue on shareholder wealth, capital structure, EPS and market valuation?</p>
+
+            <div class="record-grid">
+              <div>
+                <div class="record-fields">
+                  <div class="field">
+                    <b>Approach</b>
+                    <span>Bonus mechanics — 4:1 ratio, record date 28 February 2025 — followed through share capital transformation, reserve capitalisation and EPS measurement against market price movement.</span>
+                  </div>
+                  <div class="field">
+                    <b>Key finding</b>
+                    <span>Share capital moved from ₹20.05 Cr to ₹100.26 Cr on reserve capitalisation of ₹80.21 Cr; EPS adjusted from ₹0.92 to ₹0.14 following the 4:1 issuance, with BVPS declining ~78%.</span>
+                  </div>
+                  <div class="field field--wide">
+                    <b>Scope &amp; limitation</b>
+                    <span>Single-company study; bonus effects not isolated from broader market movement; no peer bonus-issue comparison. Academic project — not investment advice.</span>
+                  </div>
+                </div>
+                <div class="note"><b>Why it matters —</b> demonstrates the ability to translate a corporate action into changes in capital structure and per-share financial metrics.</div>
+              </div>
+
+              <div class="plate">
+                <div class="plate-head"><b>Report figures</b><span>Jindal Worldwide · 4:1 bonus</span></div>
+                <div class="plate-figures">
+                  <div class="fig"><b>₹20.05 Cr → ₹100.26 Cr</b><span>Share capital</span></div>
+                  <div class="fig fig--accent"><b>₹0.92 → ₹0.14</b><span>EPS after the 4:1 issuance</span></div>
+                  <div class="fig"><b>−84.8%</b><span>Reported EPS change</span></div>
+                </div>
+                <div class="bar">
+                  <div class="bar-track"><span class="bar-fill" style="--w:80%"></span></div>
+                  <div class="bar-legend"><span><i></i>₹80.21 Cr reserves capitalised</span><span><i class="muted"></i>Existing capital at issue</span></div>
+                </div>
+                <p class="plate-foot">Record date 28 February 2025. Figures as reported in the analysis; academic finding, not investment advice.</p>
+              </div>
             </div>
-            <div class="acc-item">
-              <button class="acc-btn" data-acc-btn aria-expanded="false"><span>Approach</span><span class="plus" aria-hidden="true"></span></button>
-              <div class="acc-panel"><div class="acc-panel-inner"><div>Bonus mechanics — 4:1 ratio, record date 28 February 2025 — followed through share capital transformation, reserve capitalisation and EPS measurement against market price movement.</div></div></div>
+
+            <div class="report-links">
+              <div class="report-row">
+                <span class="report-cap">Jindal Worldwide — corporate-action impact analysis</span>
+                <a class="report-link" href="https://docs.google.com/document/d/1-ST0W2-EolFUOAw8sI0Gc8BhKvERcQRi/edit?usp=drive_link&amp;ouid=113586569177191721533&amp;rtpof=true&amp;sd=true" target="_blank" rel="noopener noreferrer">View report <span class="arrow">↗</span></a>
+              </div>
             </div>
-            <div class="acc-item">
-              <button class="acc-btn" data-acc-btn aria-expanded="false"><span>Key finding</span><span class="plus" aria-hidden="true"></span></button>
-              <div class="acc-panel"><div class="acc-panel-inner"><div>Share capital moved from ₹20.05 Cr to ₹100.26 Cr on reserve capitalisation of ₹80.21 Cr; EPS adjusted from ₹0.92 to ₹0.14 (an 84.8% decline) following the 4:1 issuance, with BVPS declining ~78% and ROE and capital structure analysed through the issue — figures as reported in the analysis.</div></div></div>
-            </div>
-            <div class="acc-item">
-              <button class="acc-btn" data-acc-btn aria-expanded="false"><span>Limitations &amp; output</span><span class="plus" aria-hidden="true"></span></button>
-              <div class="acc-panel"><div class="acc-panel-inner"><div>Single-company study; bonus effects not isolated from broader market movement; no peer bonus-issue comparison. Output: impact analysis with signed report version. Academic project — not investment advice.
-                <div class="case-cta"><div class="report-link-list"><div class="report-item"><a class="arrow-link" href="https://docs.google.com/document/d/1-ST0W2-EolFUOAw8sI0Gc8BhKvERcQRi/edit?usp=drive_link&amp;ouid=113586569177191721533&amp;rtpof=true&amp;sd=true" target="_blank" rel="noopener noreferrer"><span>View report</span><span class="arrow">↗</span></a></div></div></div>
-              </div></div></div>
+
+            <div class="acc">
+              <div class="acc-item">
+                <button class="acc-btn" data-acc-btn aria-expanded="false"><span>Approach in detail</span><span class="plus" aria-hidden="true"></span></button>
+                <div class="acc-panel"><div class="acc-panel-inner"><div>Bonus mechanics — 4:1 ratio, record date 28 February 2025 — followed through share capital transformation, reserve capitalisation and EPS measurement against market price movement.</div></div></div>
+              </div>
+              <div class="acc-item">
+                <button class="acc-btn" data-acc-btn aria-expanded="false"><span>Key finding</span><span class="plus" aria-hidden="true"></span></button>
+                <div class="acc-panel"><div class="acc-panel-inner"><div>Share capital moved from ₹20.05 Cr to ₹100.26 Cr on reserve capitalisation of ₹80.21 Cr; EPS adjusted from ₹0.92 to ₹0.14 (an 84.8% decline) following the 4:1 issuance, with BVPS declining ~78% and ROE and capital structure analysed through the issue — figures as reported in the analysis.</div></div></div>
+              </div>
+              <div class="acc-item">
+                <button class="acc-btn" data-acc-btn aria-expanded="false"><span>Limitations &amp; output</span><span class="plus" aria-hidden="true"></span></button>
+                <div class="acc-panel"><div class="acc-panel-inner"><div>Single-company study; bonus effects not isolated from broader market movement; no peer bonus-issue comparison. Output: impact analysis with signed report version. Academic project — not investment advice.</div></div></div>
+              </div>
             </div>
           </div>
         </article>
 
-        <article class="case rv" id="case-02">
-          <div class="case-top">
-            <span class="case-num">02</span>
-            <div>
-              <span class="case-type">Investment Operations · Academic</span>
-              <h3 class="case-title">Fund Accounting &amp; Investment Operations</h3>
-              <p class="case-lede">How does an investment fund turn trades, positions and valuations into a net asset value — and where are the control points?</p>
-              <p class="case-finding"><b>Scope —</b> Excel-based class exercise modelling private-equity fund accounting and hedge-fund NAV construction on sample data.</p>
-              <p class="case-scope-note">Academic class exercise — NAV construction and fund-accounting workflow modelled using sample data.</p>
-              <div class="case-cta"><div class="report-link-list"><div class="report-item"><span class="report-cap">Submitted course file: Fund Accounting Live Project — topic inside: Jindal Worldwide 4:1 bonus-issue analysis (same document as Project 05)</span><a class="arrow-link" href="https://docs.google.com/document/d/1-ST0W2-EolFUOAw8sI0Gc8BhKvERcQRi/edit?usp=drive_link&amp;ouid=113586569177191721533&amp;rtpof=true&amp;sd=true" target="_blank" rel="noopener noreferrer"><span>View report</span><span class="arrow">↗</span></a></div></div></div>
-            </div>
+        <!-- 02 -->
+        <article class="record rv record--last" id="case-02">
+          <div class="record-rail">
+            <span class="record-no">02</span>
+            <span class="record-cat">Audit &amp; Accounting · Academic</span>
+            <span class="pill">Academic</span>
           </div>
-          <div class="acc">
-            <div class="acc-item">
-              <button class="acc-btn" data-acc-btn aria-expanded="false"><span>Approach</span><span class="plus" aria-hidden="true"></span></button>
-              <div class="acc-panel"><div class="acc-panel-inner"><div>Excel-based class exercise modelling private-equity fund accounting (commitments, calls, fees, carried-interest waterfall) and hedge-fund structure (subscriptions, journal entries, NAV, incentive fees).</div></div></div>
+          <div class="record-body">
+            <p class="record-kicker">Investment Operations · Academic</p>
+            <h3 class="record-title">Fund Accounting &amp; Investment Operations</h3>
+            <p class="record-question">How does an investment fund turn trades, positions and valuations into a net asset value — and where are the control points?</p>
+
+            <div class="record-grid">
+              <div>
+                <div class="record-fields">
+                  <div class="field">
+                    <b>Approach</b>
+                    <span>Excel-based class exercise modelling private-equity fund accounting (commitments, calls, fees, carried-interest waterfall) and hedge-fund structure (subscriptions, journal entries, NAV, incentive fees).</span>
+                  </div>
+                  <div class="field">
+                    <b>Key finding</b>
+                    <span>End-to-end models of the fund-accounting workflow: capital accounting, fee computation, waterfall distribution and NAV construction.</span>
+                  </div>
+                  <div class="field field--wide">
+                    <b>Scope &amp; limitation</b>
+                    <span>Class exercise on sample data — not real fund data. Output: Excel models only, no standalone published report. The submitted course file is the “Fund Accounting Live Project”; the topic inside is the Jindal Worldwide 4:1 bonus-issue analysis (same document as Project 05).</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="plate plate--light">
+                <div class="plate-head"><b>Fund-accounting workflow</b><span>Academic model</span></div>
+                <div class="steps">
+                  <div class="step"><i>01</i><b>Trades</b><span>Journals recorded</span></div>
+                  <div class="step"><i>02</i><b>Positions</b><span>Holdings kept</span></div>
+                  <div class="step"><i>03</i><b>Valuation</b><span>Prices applied</span></div>
+                  <div class="step"><i>04</i><b>NAV</b><span>Reconciled</span></div>
+                </div>
+                <p class="plate-foot">Private-equity accounting covered commitments, capital calls, fees and the carried-interest waterfall; hedge-fund structure covered subscriptions, journal entries, NAV and incentive fees.</p>
+              </div>
             </div>
-            <div class="acc-item">
-              <button class="acc-btn" data-acc-btn aria-expanded="false"><span>Key finding</span><span class="plus" aria-hidden="true"></span></button>
-              <div class="acc-panel"><div class="acc-panel-inner"><div>End-to-end models of the fund-accounting workflow: capital accounting, fee computation, waterfall distribution and NAV construction.</div></div></div>
+
+            <div class="report-links">
+              <div class="report-row">
+                <span class="report-cap">Submitted course file: Fund Accounting Live Project — contains the Jindal Worldwide 4:1 bonus-issue analysis (same document as Project 05)</span>
+                <a class="report-link" href="https://docs.google.com/document/d/1-ST0W2-EolFUOAw8sI0Gc8BhKvERcQRi/edit?usp=drive_link&amp;ouid=113586569177191721533&amp;rtpof=true&amp;sd=true" target="_blank" rel="noopener noreferrer">View report <span class="arrow">↗</span></a>
+              </div>
             </div>
-            <div class="acc-item">
-              <button class="acc-btn" data-acc-btn aria-expanded="false"><span>Limitations &amp; output</span><span class="plus" aria-hidden="true"></span></button>
-              <div class="acc-panel"><div class="acc-panel-inner"><div>Class exercise on sample data — not real fund data. Output: Excel models only, no standalone published report.
-              </div></div></div>
+
+            <div class="acc">
+              <div class="acc-item">
+                <button class="acc-btn" data-acc-btn aria-expanded="false"><span>Approach in detail</span><span class="plus" aria-hidden="true"></span></button>
+                <div class="acc-panel"><div class="acc-panel-inner"><div>Excel-based class exercise modelling private-equity fund accounting (commitments, calls, fees, carried-interest waterfall) and hedge-fund structure (subscriptions, journal entries, NAV, incentive fees).</div></div></div>
+              </div>
+              <div class="acc-item">
+                <button class="acc-btn" data-acc-btn aria-expanded="false"><span>Key finding</span><span class="plus" aria-hidden="true"></span></button>
+                <div class="acc-panel"><div class="acc-panel-inner"><div>End-to-end models of the fund-accounting workflow: capital accounting, fee computation, waterfall distribution and NAV construction.</div></div></div>
+              </div>
+              <div class="acc-item">
+                <button class="acc-btn" data-acc-btn aria-expanded="false"><span>Limitations &amp; output</span><span class="plus" aria-hidden="true"></span></button>
+                <div class="acc-panel"><div class="acc-panel-inner"><div>Class exercise on sample data — not real fund data. Output: Excel models only, no standalone published report.</div></div></div>
+              </div>
             </div>
           </div>
         </article>
       </div>
     </section>
 
-
-        <!-- SEMESTER 3 / ADDITIVE PROJECTS -->
-        <p class="exp-group-label rv">Semester 3 · Research &amp; Applied Finance</p>
-        <article class="case rv" id="case-s3-sizeright">
-          <div class="case-top"><span class="case-num">10</span><div>
-            <span class="case-type">Portfolio Construction · Quantitative Finance</span>
-            <h3 class="case-title">SizeRight — Profile-Driven Allocation Engine</h3>
-            <p class="case-lede">Research into how position sizing, investor risk profiles and capital constraints influence portfolio outcomes beyond stock selection alone.</p>
-            <p class="case-finding"><b>Method —</b> Deterministic allocation engine using inverse-volatility sizing, investor risk tolerance and horizon factors, a volatility floor, 15% single-stock cap, 30% sector limit, whole-share execution and cash reconciliation.</p>
-            <p class="case-finding"><b>Evidence &amp; limitation —</b> Project report documents five test suites and 132 assertions as project-reported results. No historical backtest was run, so performance improvement is not claimed.</p>
-            <p class="case-scope-note">PGDM Semester 3 capstone · Secondary data and design-science case study</p>
-          </div></div>
-        
-          <div class="acc">
-            <div class="acc-item"><button class="acc-btn" data-acc-btn aria-expanded="false"><span>The question</span><span class="plus" aria-hidden="true"></span></button><div class="acc-panel"><div class="acc-panel-inner"><div>How much does position sizing, rather than stock selection alone, determine risk-adjusted portfolio outcomes across different investor risk profiles?</div></div></div></div>
-            <div class="acc-item"><button class="acc-btn" data-acc-btn aria-expanded="false"><span>Approach</span><span class="plus" aria-hidden="true"></span></button><div class="acc-panel"><div class="acc-panel-inner"><div>Design-science case study using secondary information; deterministic inverse-volatility sizing adjusted for risk tolerance and investment horizon, with a volatility floor, 15% single-stock cap, 30% sector cap and whole-share execution.</div></div></div></div>
-            <div class="acc-item"><button class="acc-btn" data-acc-btn aria-expanded="false"><span>Key finding</span><span class="plus" aria-hidden="true"></span></button><div class="acc-panel"><div class="acc-panel-inner"><div>The report’s RELIANCE example uses ₹70,000 capital, ₹2,940.50 share price and 18.5% volatility. The 15% cap produces a ₹10,500 position budget; 3 shares cost ₹8,821.50, leaving ₹61,178.50 in cash. The report records five test suites and 132 assertions as project-reported evidence.</div></div></div></div>
-            <div class="acc-item"><button class="acc-btn" data-acc-btn aria-expanded="false"><span>Limitations</span><span class="plus" aria-hidden="true"></span></button><div class="acc-panel"><div class="acc-panel-inner"><div>No historical backtest or measured return series was supplied; the report does not claim improved returns or Sharpe ratios. Small capital and whole-share rounding can compress profile-driven allocation differences.</div></div></div></div>
-            <div class="acc-item"><button class="acc-btn" data-acc-btn aria-expanded="false"><span>Output</span><span class="plus" aria-hidden="true"></span></button><div class="acc-panel"><div class="acc-panel-inner"><div>SizeRight research report and profile-driven allocation engine.</div></div></div></div>
-          </div>
-        
-            <div class="case-cta"><div class="report-link-list"><div class="report-item"><span class="report-cap">Source files · Semester 3</span><a class="arrow-link" href="https://drive.google.com/drive/u/0/folders/1Y1Z8Ju0RZBIP8k7EP5gQH0271rra957-" target="_blank" rel="noopener noreferrer"><span>Open Semester 3 Drive folder</span><span class="arrow">↗</span></a></div></div></div>
-          </article>
-        <article class="case rv" id="case-s3-bata">
-          <div class="case-top"><span class="case-num">11</span><div>
-            <span class="case-type">Equity Valuation · Financial Modelling</span>
-            <h3 class="case-title">Bata India — Store Renovation Capex &amp; Margin Modelling</h3>
-            <p class="case-lede">An integrated operating and valuation study of Bata India’s shift toward casual footwear, store renovation programme and store-network optimisation.</p>
-            <p class="case-finding"><b>Approach —</b> Store-driven revenue build, product-mix and operating-leverage analysis, capex and free cash flow modelling, DCF valuation, scenario analysis and peer cross-check.</p>
-            <p class="case-finding"><b>Model conclusion —</b> The report’s base DCF estimates ₹420 per share against its stated ₹613 reference market price (1 October 2026); the result is sensitive to discount rate and terminal growth assumptions.</p>
-            <p class="case-scope-note">Academic valuation model · Forecasts and assumptions are not investment advice</p>
-          </div></div>
-        
-          <div class="acc">
-            <div class="acc-item"><button class="acc-btn" data-acc-btn aria-expanded="false"><span>The question</span><span class="plus" aria-hidden="true"></span></button><div class="acc-panel"><div class="acc-panel-inner"><div>Can Bata India’s shift toward casual footwear, store renovations and store-network optimisation produce enough growth, margin improvement and free cash flow to support its market value?</div></div></div></div>
-            <div class="acc-item"><button class="acc-btn" data-acc-btn aria-expanded="false"><span>Approach</span><span class="plus" aria-hidden="true"></span></button><div class="acc-panel"><div class="acc-panel-inner"><div>Integrated store-driven revenue build, product-mix and operating-leverage analysis, renovation and new-store capex, FCFF modelling, DCF scenarios and peer cross-check, with explicit Ind AS 116 lease treatment.</div></div></div></div>
-            <div class="acc-item"><button class="acc-btn" data-acc-btn aria-expanded="false"><span>Key finding</span><span class="plus" aria-hidden="true"></span></button><div class="acc-panel"><div class="acc-panel-inner"><div>The report’s base DCF estimates ₹420 per share versus its stated ₹613 reference market price dated 1 October 2026; bear and bull scenarios are ₹124 and ₹851. Terminal value contributes about 80% of enterprise value in the base case.</div></div></div></div>
-            <div class="acc-item"><button class="acc-btn" data-acc-btn aria-expanded="false"><span>Limitations</span><span class="plus" aria-hidden="true"></span></button><div class="acc-panel"><div class="acc-panel-inner"><div>The report notes limited direct access to primary filings and that renovation economics and category mix are not separately disclosed by Bata. The valuation is highly sensitive to discount rate and terminal growth.</div></div></div></div>
-            <div class="acc-item"><button class="acc-btn" data-acc-btn aria-expanded="false"><span>Output</span><span class="plus" aria-hidden="true"></span></button><div class="acc-panel"><div class="acc-panel-inner"><div>Bata India project report and integrated financial model.</div></div></div></div>
-          </div>
-        
-            <div class="case-cta"><div class="report-link-list"><div class="report-item"><span class="report-cap">Source files · Semester 3</span><a class="arrow-link" href="https://drive.google.com/drive/u/0/folders/1Y1Z8Ju0RZBIP8k7EP5gQH0271rra957-" target="_blank" rel="noopener noreferrer"><span>Open Semester 3 Drive folder</span><span class="arrow">↗</span></a></div></div></div>
-          </article>
-        <article class="case rv" id="case-s3-ntpc">
-          <div class="case-top"><span class="case-num">12</span><div>
-            <span class="case-type">Equity Research · Fundamental Valuation</span>
-            <h3 class="case-title">NTPC Limited — Equity Research &amp; Fundamental Valuation</h3>
-            <p class="case-lede">Top-down analysis of India’s power sector, NTPC’s financial performance, leverage and capital expenditure, followed by intrinsic and relative valuation.</p>
-            <p class="case-finding"><b>Approach —</b> Discounted cash flow model, WACC and terminal-growth assumptions, peer-multiple cross-check, scenario sensitivity and risk analysis using FY2025–26 standalone figures.</p>
-            <p class="case-finding"><b>Report view —</b> Neutral (Hold), with a DCF-based value range of ₹182–₹240 per share; the report explains the divergence between DCF and peer-based values.</p>
-            <p class="case-scope-note">PGDM research project · Values reflect the report’s stated assumptions and reference price</p>
-          </div></div>
-        
-          <div class="acc">
-            <div class="acc-item"><button class="acc-btn" data-acc-btn aria-expanded="false"><span>The question</span><span class="plus" aria-hidden="true"></span></button><div class="acc-panel"><div class="acc-panel-inner"><div>What is NTPC Limited’s fundamental value after assessing the Indian power sector, company performance, capital expenditure and valuation risks?</div></div></div></div>
-            <div class="acc-item"><button class="acc-btn" data-acc-btn aria-expanded="false"><span>Approach</span><span class="plus" aria-hidden="true"></span></button><div class="acc-panel"><div class="acc-panel-inner"><div>Top-down sector and company analysis using FY2025–26 standalone figures; DCF valuation, WACC and terminal-growth assumptions, relative valuation against listed peers, and risk and sensitivity analysis.</div></div></div></div>
-            <div class="acc-item"><button class="acc-btn" data-acc-btn aria-expanded="false"><span>Key finding</span><span class="plus" aria-hidden="true"></span></button><div class="acc-panel"><div class="acc-panel-inner"><div>The report estimates DCF values of ₹182 per share in the base case and ₹240 under an alternative equity-risk-premium assumption. Relative valuation gives ₹381–₹575 per share; the report adopts a Neutral (Hold) view based on the divergence between methods.</div></div></div></div>
-            <div class="acc-item"><button class="acc-btn" data-acc-btn aria-expanded="false"><span>Limitations</span><span class="plus" aria-hidden="true"></span></button><div class="acc-panel"><div class="acc-panel-inner"><div>The model is based on standalone financials; subsidiary value, forecast uncertainty, terminal-value dependence and peer comparability affect the conclusion. Values reflect the report’s assumptions and reference market price.</div></div></div></div>
-            <div class="acc-item"><button class="acc-btn" data-acc-btn aria-expanded="false"><span>Output</span><span class="plus" aria-hidden="true"></span></button><div class="acc-panel"><div class="acc-panel-inner"><div>NTPC equity research and fundamental valuation report.</div></div></div></div>
-          </div>
-        
-            <div class="case-cta"><div class="report-link-list"><div class="report-item"><span class="report-cap">Source files · Semester 3</span><a class="arrow-link" href="https://drive.google.com/drive/u/0/folders/1Y1Z8Ju0RZBIP8k7EP5gQH0271rra957-" target="_blank" rel="noopener noreferrer"><span>Open Semester 3 Drive folder</span><span class="arrow">↗</span></a></div></div></div>
-          </article>
-        <article class="case rv" id="case-s3-page">
-          <div class="case-top"><span class="case-num">13</span><div>
-            <span class="case-type">Financial Reporting · US GAAP &amp; Ind AS</span>
-            <h3 class="case-title">US GAAP ASC Analysis &amp; Ind AS Application at Page Industries</h3>
-            <p class="case-lede">Comparative analysis of five US GAAP Accounting Standards Codification topics and five corresponding Indian Accounting Standards applied to Page Industries Ltd.</p>
-            <p class="case-finding"><b>Standards covered —</b> ASC 606, 330, 842, 740 and 715; Ind AS 115, 2, 116, 12 and 19. The study examines recognition, measurement, presentation, disclosure and management judgement.</p>
-            <p class="case-scope-note">Secondary-data research · FY2023–24 to FY2025–26 trend period</p>
-          </div></div>
-        
-          <div class="acc">
-            <div class="acc-item"><button class="acc-btn" data-acc-btn aria-expanded="false"><span>The question</span><span class="plus" aria-hidden="true"></span></button><div class="acc-panel"><div class="acc-panel-inner"><div>How do five relevant US GAAP ASC topics compare with five corresponding Ind AS applied at Page Industries Ltd.?</div></div></div></div>
-            <div class="acc-item"><button class="acc-btn" data-acc-btn aria-expanded="false"><span>Approach</span><span class="plus" aria-hidden="true"></span></button><div class="acc-panel"><div class="acc-panel-inner"><div>Secondary-data comparative study of recognition, measurement, presentation and disclosure using company financial results, annual-report disclosures, auditor reports, regulatory material and accounting literature for FY2023–24 to FY2025–26.</div></div></div></div>
-            <div class="acc-item"><button class="acc-btn" data-acc-btn aria-expanded="false"><span>Key finding</span><span class="plus" aria-hidden="true"></span></button><div class="acc-panel"><div class="acc-panel-inner"><div>The report covers ASC 606, 330, 842, 740 and 715 alongside Ind AS 115, 2, 116, 12 and 19. It highlights practical differences involving inventory write-down reversals, lease accounting, deferred tax and employee benefits.</div></div></div></div>
-            <div class="acc-item"><button class="acc-btn" data-acc-btn aria-expanded="false"><span>Limitations</span><span class="plus" aria-hidden="true"></span></button><div class="acc-panel"><div class="acc-panel-inner"><div>Findings depend on the public disclosures and secondary sources reviewed; the report does not replace a full engagement-level accounting assessment.</div></div></div></div>
-            <div class="acc-item"><button class="acc-btn" data-acc-btn aria-expanded="false"><span>Output</span><span class="plus" aria-hidden="true"></span></button><div class="acc-panel"><div class="acc-panel-inner"><div>Comparative US GAAP and Ind AS project report.</div></div></div></div>
-          </div>
-        
-            <div class="case-cta"><div class="report-link-list"><div class="report-item"><span class="report-cap">Source files · Semester 3</span><a class="arrow-link" href="https://drive.google.com/drive/u/0/folders/1Y1Z8Ju0RZBIP8k7EP5gQH0271rra957-" target="_blank" rel="noopener noreferrer"><span>Open Semester 3 Drive folder</span><span class="arrow">↗</span></a></div></div></div>
-          </article>
-        <article class="case rv" id="case-s3-audit">
-          <div class="case-top"><span class="case-num">14</span><div>
-            <span class="case-type">Statutory Audit · Companies Act, 2013</span>
-            <h3 class="case-title">Qualified Audit Opinion in a Government Defence Company</h3>
-            <p class="case-lede">A hypothetical case on submarine work-in-progress valuation, Section 143(5) reporting and national-security restrictions in a Government defence manufacturer.</p>
-            <p class="case-finding"><b>Audit analysis —</b> Quantifies an assumed ₹312 crore WIP misstatement, evaluates materiality and pervasiveness, and develops a qualified-opinion rationale alongside C&amp;AG directions, CARO 2020 and Section 143(3) reporting.</p>
-            <p class="case-scope-note">Hypothetical case study · All company and financial figures are assumed; not a real audit engagement</p>
-          </div></div>
-        
-          <div class="acc">
-            <div class="acc-item"><button class="acc-btn" data-acc-btn aria-expanded="false"><span>The question</span><span class="plus" aria-hidden="true"></span></button><div class="acc-panel"><div class="acc-panel-inner"><div>How should a statutory auditor report a material submarine work-in-progress misstatement in a hypothetical Government defence company when management cites national-security classification?</div></div></div></div>
-            <div class="acc-item"><button class="acc-btn" data-acc-btn aria-expanded="false"><span>Approach</span><span class="plus" aria-hidden="true"></span></button><div class="acc-panel"><div class="acc-panel-inner"><div>Hypothetical case analysis under Section 143 of the Companies Act, 2013, C&amp;AG directions, applicable Standards on Auditing, CARO 2020 and relevant accounting requirements; assesses materiality, pervasiveness and report wording.</div></div></div></div>
-            <div class="acc-item"><button class="acc-btn" data-acc-btn aria-expanded="false"><span>Key finding</span><span class="plus" aria-hidden="true"></span></button><div class="acc-panel"><div class="acc-panel-inner"><div>The report assumes a ₹312 crore WIP misstatement against ₹32 crore materiality and concludes that the effect is material but not pervasive, supporting a qualified opinion in the scenario.</div></div></div></div>
-            <div class="acc-item"><button class="acc-btn" data-acc-btn aria-expanded="false"><span>Limitations</span><span class="plus" aria-hidden="true"></span></button><div class="acc-panel"><div class="acc-panel-inner"><div>The company, figures and case are hypothetical. Actual C&amp;AG sub-directions, engagement evidence and facts would need verification before any real audit report could be issued.</div></div></div></div>
-            <div class="acc-item"><button class="acc-btn" data-acc-btn aria-expanded="false"><span>Output</span><span class="plus" aria-hidden="true"></span></button><div class="acc-panel"><div class="acc-panel-inner"><div>Qualified audit opinion case report and illustrative statutory reporting analysis.</div></div></div></div>
-          </div>
-        
-            <div class="case-cta"><div class="report-link-list"><div class="report-item"><span class="report-cap">Source files · Semester 3</span><a class="arrow-link" href="https://drive.google.com/drive/u/0/folders/1Y1Z8Ju0RZBIP8k7EP5gQH0271rra957-" target="_blank" rel="noopener noreferrer"><span>Open Semester 3 Drive folder</span><span class="arrow">↗</span></a></div></div></div>
-          </article>
-
-    <!-- 06 / APPROACH -->
-    <section class="section section--dark" id="approach" aria-labelledby="think-title">
+    <!-- SEMESTER 3 -->
+    <section class="section section--stone" aria-labelledby="s3-title">
       <div class="container">
         <div class="sec-head rv">
-          <p class="sec-label"><span class="num">06 /</span> Approach</p>
-          <h2 class="sec-title" id="think-title">How I approach financial work.</h2>
-          <p class="lead">A practical working approach — not an official framework, standard or methodology. Each step is demonstrated on real work above.</p>
-        </div>
-        <div class="flow rv" aria-label="Working approach: understand, analyse, verify, interpret, document, conclude">
-          <span class="flow-step"><i>01</i><b>Understand</b></span>
-          <span class="flow-step"><i>02</i><b>Analyse</b></span>
-          <span class="flow-step"><i>03</i><b>Verify</b></span>
-          <span class="flow-step"><i>04</i><b>Interpret</b></span>
-          <span class="flow-step"><i>05</i><b>Document</b></span>
-          <span class="flow-step"><i>06</i><b>Conclude</b></span>
-        </div>
-        <div class="mini-grid">
-          <div class="mini rv">
-            <span class="star-kicker">Audit — Transaction verification</span>
-            <p>Question → trace the transaction → inspect supporting evidence → verify the accounting treatment → document the conclusion. Applied across 3,000+ vouched transactions and 1,000+ scrutinized ledgers at G M Achhra &amp; Associates.</p>
-          </div>
-          <div class="mini rv d1">
-            <span class="star-kicker">Corporate action — Jindal 4:1 bonus</span>
-            <p>Question → analyse reserve capitalisation → examine the share-count effect → evaluate EPS and BVPS changes → interpret shareholder impact. EPS declined 84.8% (₹0.92 → ₹0.14); BVPS declined ~78%, per the report's analysis.</p>
-          </div>
-          <div class="mini rv d2">
-            <span class="star-kicker">Financial analysis — Tech Mahindra</span>
-            <p>Question → examine ten years of statements → analyse ratios and trends → build two-year projections → state what the trends support. Liquidity held above 1:1 throughout; gross margin 60–63%; operating margin troughed at 4.40% in 2023–24.</p>
+          <p class="sec-label"><span class="sec-num">04</span>Semester 3</p>
+          <div>
+            <h2 class="sec-title" id="s3-title">Applied finance, built from first principles.</h2>
+            <p class="sec-lead">Five Semester 3 projects across portfolio construction, valuation, equity research, financial reporting and statutory audit. Each plate below uses figures stated in its own report — never live market data.</p>
+            <div class="sec-aside">
+              <a class="link-arrow" href="projects.html#p10">Open all five records <span class="arrow">→</span></a>
+            </div>
           </div>
         </div>
+
+        <!-- 10 SizeRight -->
+        <article class="record rv" id="case-s3-sizeright">
+          <div class="record-rail">
+            <span class="record-no">10</span>
+            <span class="record-cat">Research · Quantitative Finance</span>
+            <span class="pill pill--gold">Capstone</span>
+          </div>
+          <div class="record-body">
+            <p class="record-kicker">Portfolio Construction · Quantitative Finance</p>
+            <h3 class="record-title">SizeRight — Profile-Driven Allocation Engine</h3>
+            <p class="record-question">How much does position sizing, rather than stock selection alone, determine risk-adjusted portfolio outcomes across divergent investor risk profiles?</p>
+
+            <div class="record-grid">
+              <div>
+                <div class="record-fields">
+                  <div class="field">
+                    <b>Method</b>
+                    <span>Deterministic allocation engine using inverse-volatility sizing, investor risk tolerance and horizon factors, a volatility floor, 15% single-stock cap, 30% sector limit, whole-share execution and cash reconciliation.</span>
+                  </div>
+                  <div class="field">
+                    <b>Evidence</b>
+                    <span>Project report documents five test suites and 132 assertions as project-reported results.</span>
+                  </div>
+                  <div class="field field--wide">
+                    <b>Limitation</b>
+                    <span>No historical backtest was run, so improvement in returns or risk-adjusted performance is not claimed. Small capital and whole-share rounding can compress profile-driven differences.</span>
+                  </div>
+                </div>
+                <div class="note note--quiet">PGDM Semester 3 capstone · Secondary data and design-science case study.</div>
+              </div>
+
+              <div class="plate">
+                <div class="plate-head"><b>Allocation example</b><span>RELIANCE · 15% cap</span></div>
+                <div class="plate-figures">
+                  <div class="fig"><b>₹70,000</b><span>Capital</span></div>
+                  <div class="fig"><b>₹10,500</b><span>15% position budget</span></div>
+                  <div class="fig fig--accent"><b>₹8,821.50</b><span>3 shares × ₹2,940.50</span></div>
+                  <div class="fig"><b>₹61,178.50</b><span>Residual cash</span></div>
+                </div>
+                <div class="bar">
+                  <div class="bar-track"><span class="bar-fill" style="--w:12.6%"></span></div>
+                  <div class="bar-legend"><span><i></i>Deployed</span><span><i class="muted"></i>Cash after whole-share rounding</span></div>
+                </div>
+                <p class="plate-foot">Share price and volatility of 18.5% are the report’s stated inputs. A 15% single-stock ceiling and a 30% sector limit constrain the allocation.</p>
+              </div>
+            </div>
+
+            <div class="report-links">
+              <div class="report-row">
+                <span class="report-cap">Source files · Semester 3 Drive archive</span>
+                <a class="report-link" href="https://drive.google.com/drive/u/0/folders/1Y1Z8Ju0RZBIP8k7EP5gQH0271rra957-" target="_blank" rel="noopener noreferrer">Open Drive folder <span class="arrow">↗</span></a>
+              </div>
+            </div>
+            <div class="record-foot">
+              <span></span>
+              <a class="link-arrow" href="projects.html#p10">Full record <span class="arrow">→</span></a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 11 Bata -->
+        <article class="record rv" id="case-s3-bata">
+          <div class="record-rail">
+            <span class="record-no">11</span>
+            <span class="record-cat">Valuation · Financial Modelling</span>
+          </div>
+          <div class="record-body">
+            <p class="record-kicker">Equity Valuation · Financial Modelling</p>
+            <h3 class="record-title">Bata India — Store Renovation Capex &amp; Margin Modelling</h3>
+            <p class="record-question">Can Bata India’s shift toward casual footwear, store renovations and store-network optimisation produce enough growth, margin improvement and free cash flow to support its market value?</p>
+
+            <div class="record-grid">
+              <div>
+                <div class="record-fields">
+                  <div class="field">
+                    <b>Approach</b>
+                    <span>Store-driven revenue build, product-mix and operating-leverage analysis, renovation and new-store capex, FCFF modelling, DCF scenarios and peer cross-check, with explicit Ind AS 116 lease treatment.</span>
+                  </div>
+                  <div class="field">
+                    <b>Model conclusion</b>
+                    <span>The report’s base DCF estimates ₹420 per share against its stated ₹613 reference market price dated 1 October 2026; bear and bull scenarios are ₹124 and ₹851.</span>
+                  </div>
+                  <div class="field field--wide">
+                    <b>Limitation</b>
+                    <span>Limited direct access to primary filings; renovation economics and category mix are not separately disclosed by Bata. Terminal value contributes about 80% of enterprise value in the base case, so the valuation is highly sensitive to discount rate and terminal growth.</span>
+                  </div>
+                </div>
+                <div class="note note--quiet">Academic valuation model · Forecasts and assumptions are not investment advice.</div>
+              </div>
+
+              <div class="plate">
+                <div class="plate-head"><b>Valuation range</b><span>₹ per share · report values</span></div>
+                <div class="scale">
+                  <div class="scale-track" aria-hidden="true">
+                    <span class="scale-mark" style="--p:13.8%"><span>₹124 bear</span></span>
+                    <span class="scale-mark scale-mark--key" style="--p:46.7%"><span>₹420 base</span></span>
+                    <span class="scale-mark" style="--p:68.1%"><span>₹613 reference</span></span>
+                    <span class="scale-mark" style="--p:94.6%"><span>₹851 bull</span></span>
+                  </div>
+                </div>
+                <div class="plate-figures" style="margin-top:26px">
+                  <div class="fig fig--accent"><b>₹420</b><span>Base DCF value</span></div>
+                  <div class="fig"><b>₹613</b><span>Report reference price · 1 Oct 2026</span></div>
+                </div>
+                <p class="plate-foot">Scale runs ₹0–₹900. DCF outputs depend on the report’s discount-rate and terminal-growth assumptions.</p>
+              </div>
+            </div>
+
+            <div class="report-links">
+              <div class="report-row">
+                <span class="report-cap">Source files · Semester 3 Drive archive</span>
+                <a class="report-link" href="https://drive.google.com/drive/u/0/folders/1Y1Z8Ju0RZBIP8k7EP5gQH0271rra957-" target="_blank" rel="noopener noreferrer">Open Drive folder <span class="arrow">↗</span></a>
+              </div>
+            </div>
+            <div class="record-foot">
+              <span></span>
+              <a class="link-arrow" href="projects.html#p11">Full record <span class="arrow">→</span></a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 12 NTPC -->
+        <article class="record rv" id="case-s3-ntpc">
+          <div class="record-rail">
+            <span class="record-no">12</span>
+            <span class="record-cat">Research · Equity Valuation</span>
+          </div>
+          <div class="record-body">
+            <p class="record-kicker">Equity Research · Fundamental Valuation</p>
+            <h3 class="record-title">NTPC Limited — Equity Research &amp; Fundamental Valuation</h3>
+            <p class="record-question">What is NTPC Limited’s fundamental value after assessing the Indian power sector, company performance, capital expenditure and valuation risks?</p>
+
+            <div class="record-grid">
+              <div>
+                <div class="record-fields">
+                  <div class="field">
+                    <b>Approach</b>
+                    <span>Top-down sector and company analysis using FY2025–26 standalone figures; DCF valuation, WACC and terminal-growth assumptions, relative valuation against listed peers, and risk and sensitivity analysis.</span>
+                  </div>
+                  <div class="field">
+                    <b>Report view</b>
+                    <span>Neutral (Hold). The report estimates DCF values of ₹182 per share in the base case and ₹240 under an alternative equity-risk-premium assumption; relative valuation gives ₹381–₹575 per share.</span>
+                  </div>
+                  <div class="field field--wide">
+                    <b>Limitation</b>
+                    <span>Standalone financials; subsidiary value, forecast uncertainty, terminal-value dependence and peer comparability affect the conclusion. Values reflect the report’s assumptions and reference market price.</span>
+                  </div>
+                </div>
+                <div class="note note--quiet">PGDM research project · Not investment advice.</div>
+              </div>
+
+              <div class="plate">
+                <div class="plate-head"><b>Valuation methods</b><span>₹ per share · report values</span></div>
+                <div class="range">
+                  <div class="range-top"><span>DCF value</span><b>₹182 — ₹240</b></div>
+                  <div class="range-track"><span class="range-fill" style="--from:30.3%;--len:9.7%"></span></div>
+                </div>
+                <div class="range">
+                  <div class="range-top"><span>Peer-based value</span><b>₹381 — ₹575</b></div>
+                  <div class="range-track"><span class="range-fill range-fill--alt" style="--from:63.5%;--len:32.3%"></span></div>
+                </div>
+                <div class="plate-figures" style="margin-top:24px">
+                  <div class="fig fig--accent"><b>Neutral</b><span>Report conclusion — Hold</span></div>
+                  <div class="fig"><b>FY2025–26</b><span>Standalone basis</span></div>
+                </div>
+                <p class="plate-foot">Both tracks use a ₹0–₹600 scale. The report explains the divergence between intrinsic and relative values.</p>
+              </div>
+            </div>
+
+            <div class="report-links">
+              <div class="report-row">
+                <span class="report-cap">Source files · Semester 3 Drive archive</span>
+                <a class="report-link" href="https://drive.google.com/drive/u/0/folders/1Y1Z8Ju0RZBIP8k7EP5gQH0271rra957-" target="_blank" rel="noopener noreferrer">Open Drive folder <span class="arrow">↗</span></a>
+              </div>
+            </div>
+            <div class="record-foot">
+              <span></span>
+              <a class="link-arrow" href="projects.html#p12">Full record <span class="arrow">→</span></a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 13 Page Industries -->
+        <article class="record rv" id="case-s3-page">
+          <div class="record-rail">
+            <span class="record-no">13</span>
+            <span class="record-cat">Audit &amp; Accounting · Reporting</span>
+          </div>
+          <div class="record-body">
+            <p class="record-kicker">Financial Reporting · US GAAP &amp; Ind AS</p>
+            <h3 class="record-title">US GAAP ASC Analysis &amp; Ind AS Application at Page Industries</h3>
+            <p class="record-question">How do five relevant US GAAP ASC topics compare with five corresponding Ind AS applied at Page Industries Ltd.?</p>
+
+            <div class="record-grid">
+              <div>
+                <div class="record-fields">
+                  <div class="field">
+                    <b>Approach</b>
+                    <span>Secondary-data comparative study of recognition, measurement, presentation and disclosure using company financial results, annual-report disclosures, auditor reports, regulatory material and accounting literature for FY2023–24 to FY2025–26.</span>
+                  </div>
+                  <div class="field">
+                    <b>Focus</b>
+                    <span>Practical differences involving inventory write-down reversals, lease accounting, deferred tax and employee benefits.</span>
+                  </div>
+                  <div class="field field--wide">
+                    <b>Limitation</b>
+                    <span>Findings depend on the public disclosures and secondary sources reviewed; the report does not replace a full engagement-level accounting assessment.</span>
+                  </div>
+                </div>
+                <div class="note note--quiet">Academic comparative accounting research · Not an audit opinion.</div>
+              </div>
+
+              <div class="plate plate--light">
+                <div class="plate-head"><b>Standards compared</b><span>5 ASC topics · 5 Ind AS</span></div>
+                <div class="matrix">
+                  <div class="matrix-row"><b>ASC 606</b><span class="mid">↔</span><b>Ind AS 115</b></div>
+                  <div class="matrix-row"><b>ASC 330</b><span class="mid">↔</span><b>Ind AS 2</b></div>
+                  <div class="matrix-row"><b>ASC 842</b><span class="mid">↔</span><b>Ind AS 116</b></div>
+                  <div class="matrix-row"><b>ASC 740</b><span class="mid">↔</span><b>Ind AS 12</b></div>
+                  <div class="matrix-row"><b>ASC 715</b><span class="mid">↔</span><b>Ind AS 19</b></div>
+                </div>
+                <p class="plate-foot">Revenue, inventory, leases, income taxes and employee benefits — compared for recognition, measurement, presentation and disclosure.</p>
+              </div>
+            </div>
+
+            <div class="report-links">
+              <div class="report-row">
+                <span class="report-cap">Source files · Semester 3 Drive archive</span>
+                <a class="report-link" href="https://drive.google.com/drive/u/0/folders/1Y1Z8Ju0RZBIP8k7EP5gQH0271rra957-" target="_blank" rel="noopener noreferrer">Open Drive folder <span class="arrow">↗</span></a>
+              </div>
+            </div>
+            <div class="record-foot">
+              <span></span>
+              <a class="link-arrow" href="projects.html#p13">Full record <span class="arrow">→</span></a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 14 Audit -->
+        <article class="record rv record--last" id="case-s3-audit">
+          <div class="record-rail">
+            <span class="record-no">14</span>
+            <span class="record-cat">Audit &amp; Accounting · Statutory Audit</span>
+            <span class="pill">Hypothetical</span>
+          </div>
+          <div class="record-body">
+            <p class="record-kicker">Statutory Audit · Companies Act, 2013</p>
+            <h3 class="record-title">Qualified Audit Opinion in a Government Defence Company</h3>
+            <p class="record-question">How should a statutory auditor report a material submarine work-in-progress misstatement when management cites national-security classification?</p>
+
+            <div class="record-grid">
+              <div>
+                <div class="record-fields">
+                  <div class="field">
+                    <b>Approach</b>
+                    <span>Hypothetical case analysis under Section 143 of the Companies Act, 2013, C&amp;AG directions, applicable Standards on Auditing, CARO 2020 and relevant accounting requirements; assesses materiality, pervasiveness and report wording.</span>
+                  </div>
+                  <div class="field">
+                    <b>Analysis</b>
+                    <span>Quantifies an assumed ₹312 crore WIP misstatement against ₹32 crore materiality and concludes the effect is material but not pervasive, supporting a qualified opinion in the scenario.</span>
+                  </div>
+                  <div class="field field--wide">
+                    <b>Limitation</b>
+                    <span>All company and financial figures are assumed. Actual C&amp;AG sub-directions, engagement evidence and facts would need verification before any real audit report could be issued.</span>
+                  </div>
+                </div>
+                <div class="note"><b>Hypothetical case study —</b> not a real audit engagement, company finding or professional opinion.</div>
+              </div>
+
+              <div class="plate">
+                <div class="plate-head"><b>Materiality test</b><span>Scenario inputs · ₹ crore</span></div>
+                <div class="plate-figures">
+                  <div class="fig fig--accent"><b>₹312 Cr</b><span>Assumed WIP misstatement</span></div>
+                  <div class="fig"><b>₹32 Cr</b><span>Materiality</span></div>
+                  <div class="fig"><b>9.75×</b><span>Misstatement to materiality</span></div>
+                </div>
+                <div class="range">
+                  <div class="range-top"><span>Assumed misstatement</span><b>₹312 Cr</b></div>
+                  <div class="range-track"><span class="range-fill" style="--from:0%;--len:100%"></span></div>
+                </div>
+                <div class="range">
+                  <div class="range-top"><span>Materiality threshold</span><b>₹32 Cr</b></div>
+                  <div class="range-track"><span class="range-fill range-fill--alt" style="--from:0%;--len:10.3%"></span></div>
+                </div>
+                <p class="plate-foot">Case inputs only. Material but not pervasive in the scenario, which supports a qualified rather than adverse opinion.</p>
+              </div>
+            </div>
+
+            <div class="report-links">
+              <div class="report-row">
+                <span class="report-cap">Source files · Semester 3 Drive archive</span>
+                <a class="report-link" href="https://drive.google.com/drive/u/0/folders/1Y1Z8Ju0RZBIP8k7EP5gQH0271rra957-" target="_blank" rel="noopener noreferrer">Open Drive folder <span class="arrow">↗</span></a>
+              </div>
+            </div>
+            <div class="record-foot">
+              <span></span>
+              <a class="link-arrow" href="projects.html#p14">Full record <span class="arrow">→</span></a>
+            </div>
+          </div>
+        </article>
       </div>
     </section>
 
-    <!-- 07 / RESEARCH LIBRARY -->
-    <section class="section section--stone" aria-labelledby="lib-title">
+    <!-- RESEARCH LIBRARY -->
+    <section class="section" id="library" aria-labelledby="lib-title">
       <div class="container">
         <div class="sec-head rv">
-          <p class="sec-label"><span class="num">07 /</span> Library</p>
-          <h2 class="sec-title" id="lib-title">Research library.</h2>
-          <p class="lead">All 14 projects. Filter by area, open a row for the working detail, or jump to a selected case study.</p>
+          <p class="sec-label"><span class="sec-num">05</span>Research library</p>
+          <div>
+            <h2 class="sec-title" id="lib-title">Fourteen records. One standard.</h2>
+            <p class="sec-lead">Filter by area, open a record for the working detail, or follow the report where one is published. Counts reflect the real inventory.</p>
+          </div>
         </div>
+
         <div class="filters rv" role="group" aria-label="Filter projects by area">
           <button class="fchip" data-filter="all" aria-pressed="true">All<span class="cnt">14</span></button>
           <button class="fchip" data-filter="audit" aria-pressed="false">Audit &amp; Accounting<span class="cnt">3</span></button>
@@ -528,6 +709,7 @@
           <button class="fchip" data-filter="banking" aria-pressed="false">Banking<span class="cnt">2</span></button>
           <button class="fchip" data-filter="research" aria-pressed="false">Research<span class="cnt">4</span></button>
         </div>
+
         <div class="lib rv">
           <div class="lib-row" data-cat="research">
             <a class="lib-head" href="#case-01">
@@ -545,7 +727,7 @@
               <span class="lib-meta">Class exercise · File linked</span>
               <span class="lib-arrow" aria-hidden="true">→</span>
             </a>
-            <p class="lib-finding">Excel class exercise on the fund-accounting workflow and NAV construction using sample data — question, approach, finding and limitations detailed in the case study above; linked file's topic inside is the Jindal 4:1 bonus-issue analysis.</p>
+            <p class="lib-finding">Excel class exercise on the fund-accounting workflow and NAV construction using sample data — question, approach, finding and limitations detailed in the case study above; linked file’s topic inside is the Jindal 4:1 bonus-issue analysis.</p>
           </div>
           <div class="lib-row" data-cat="analysis">
             <div class="lib-head lib-head--split">
@@ -558,12 +740,14 @@
             </div>
             <p class="lib-finding">Revenue modelled from ₹927 Cr (FY24) to ₹1,985 Cr (FY27E); blended LTV/CAC of 3.02x with payback under five months.</p>
             <div class="lib-detail"><div class="lib-detail-inner"><div>
-              <p class="lib-field"><b>The question</b>How does Cult.fit’s revenue trajectory and unit economics compare with traditional gym chains?</p>
-              <p class="lib-field"><b>Approach</b>Three-year revenue forecast model (FY24–FY27E) with unit economics and peer benchmarking against Gold’s Gym India and Talwalkars.</p>
-              <p class="lib-field"><b>Key finding</b>Revenue modelled from ₹927 Cr (FY24) to ₹1,985 Cr (FY27E); blended LTV/CAC of 3.02x with payback under five months.</p>
-              <p class="lib-field"><b>Limitations</b>Net losses persist through FY25E; home-plan churn structurally high; projections assume continued market expansion.</p>
-              <p class="lib-field"><b>Output</b>Signed report with FP&amp;A model.</p>
-              <div class="case-cta"><div class="report-link-list"><div class="report-item"><a class="arrow-link" href="https://docs.google.com/document/d/15KwRoxBXu1gl8Ad9i0O74e_oHOddEKci/edit?usp=drive_link&amp;ouid=113586569177191721533&amp;rtpof=true&amp;sd=true" target="_blank" rel="noopener noreferrer"><span>View report</span><span class="arrow">↗</span></a></div></div></div>
+              <p class="lib-field"><b>The question</b><span>How does Cult.fit’s revenue trajectory and unit economics compare with traditional gym chains?</span></p>
+              <p class="lib-field"><b>Approach</b><span>Three-year revenue forecast model (FY24–FY27E) with unit economics and peer benchmarking against Gold’s Gym India and Talwalkars.</span></p>
+              <p class="lib-field"><b>Key finding</b><span>Revenue modelled from ₹927 Cr (FY24) to ₹1,985 Cr (FY27E); blended LTV/CAC of 3.02x with payback under five months.</span></p>
+              <p class="lib-field"><b>Limitations</b><span>Net losses persist through FY25E; home-plan churn structurally high; projections assume continued market expansion.</span></p>
+              <p class="lib-field"><b>Output</b><span>Signed report with FP&amp;A model.</span></p>
+              <div class="report-links">
+                <div class="report-row"><span class="report-cap">Cult.fit — revenue forecast and unit economics</span><a class="report-link" href="https://docs.google.com/document/d/15KwRoxBXu1gl8Ad9i0O74e_oHOddEKci/edit?usp=drive_link&amp;ouid=113586569177191721533&amp;rtpof=true&amp;sd=true" target="_blank" rel="noopener noreferrer">View report <span class="arrow">↗</span></a></div>
+              </div>
             </div></div></div>
           </div>
           <div class="lib-row" data-cat="analysis">
@@ -577,12 +761,14 @@
             </div>
             <p class="lib-finding">Gross leverage reached 31:1 by FY2007; risk appetite expanded 55% in 2006–07 without constraining real-estate concentration.</p>
             <div class="lib-detail"><div class="lib-detail-inner"><div>
-              <p class="lib-field"><b>The question</b>How did formal risk structures fail at Lehman Brothers, and what does that reveal about risk culture?</p>
-              <p class="lib-field"><b>Approach</b>Case study built on the FY2007 10-K and annual report: leverage, VaR, risk appetite, liquidity, governance and disclosure.</p>
-              <p class="lib-field"><b>Key finding</b>Gross leverage reached 31:1 by FY2007; risk appetite expanded 55% in 2006–07 without constraining real-estate concentration.</p>
-              <p class="lib-field"><b>Limitations</b>Public filings only — no internal data; report written in 2026, not contemporaneous with events.</p>
-              <p class="lib-field"><b>Output</b>Full report with assessment tables.</p>
-              <div class="case-cta"><div class="report-link-list"><div class="report-item"><a class="arrow-link" href="https://drive.google.com/file/d/1yhWyuGiuQRcqxmyDaGqeDLzm3GDpXk3U/view?usp=drive_link" target="_blank" rel="noopener noreferrer"><span>View report</span><span class="arrow">↗</span></a></div></div></div>
+              <p class="lib-field"><b>The question</b><span>How did formal risk structures fail at Lehman Brothers, and what does that reveal about risk culture?</span></p>
+              <p class="lib-field"><b>Approach</b><span>Case study built on the FY2007 10-K and annual report: leverage, VaR, risk appetite, liquidity, governance and disclosure.</span></p>
+              <p class="lib-field"><b>Key finding</b><span>Gross leverage reached 31:1 by FY2007; risk appetite expanded 55% in 2006–07 without constraining real-estate concentration.</span></p>
+              <p class="lib-field"><b>Limitations</b><span>Public filings only — no internal data; report written in 2026, not contemporaneous with events.</span></p>
+              <p class="lib-field"><b>Output</b><span>Full report with assessment tables.</span></p>
+              <div class="report-links">
+                <div class="report-row"><span class="report-cap">Lehman Brothers — risk management and governance</span><a class="report-link" href="https://drive.google.com/file/d/1yhWyuGiuQRcqxmyDaGqeDLzm3GDpXk3U/view?usp=drive_link" target="_blank" rel="noopener noreferrer">View report <span class="arrow">↗</span></a></div>
+              </div>
             </div></div></div>
           </div>
           <div class="lib-row" data-cat="markets">
@@ -605,12 +791,14 @@
             </div>
             <p class="lib-finding">A moratorium suspends EMI timing, not the obligation — interest accrues and total repayment rises while borrowers avoid defaulter classification.</p>
             <div class="lib-detail"><div class="lib-detail-inner"><div>
-              <p class="lib-field"><b>The question</b>How do moratorium structures function in Indian banking, and what are their effects on borrowers and banks?</p>
-              <p class="lib-field"><b>Approach</b>Secondary research across RBI circulars, banking reports and the COVID-19 moratorium case study, with interest and EMI illustrations.</p>
-              <p class="lib-field"><b>Key finding</b>A moratorium suspends EMI timing, not the obligation — interest accrues and total repayment rises while borrowers avoid defaulter classification.</p>
-              <p class="lib-field"><b>Limitations</b>Secondary data only; bank policy variations limit universal applicability.</p>
-              <p class="lib-field"><b>Output</b>Full report.</p>
-              <div class="case-cta"><div class="report-link-list"><div class="report-item"><a class="arrow-link" href="https://drive.google.com/file/d/1MO-MuSvUr_hlUCkLot7nx0WQ8BYkMjTd/view?usp=drive_link" target="_blank" rel="noopener noreferrer"><span>View report</span><span class="arrow">↗</span></a></div></div></div>
+              <p class="lib-field"><b>The question</b><span>How do moratorium structures function in Indian banking, and what are their effects on borrowers and banks?</span></p>
+              <p class="lib-field"><b>Approach</b><span>Secondary research across RBI circulars, banking reports and the COVID-19 moratorium case study, with interest and EMI illustrations.</span></p>
+              <p class="lib-field"><b>Key finding</b><span>A moratorium suspends EMI timing, not the obligation — interest accrues and total repayment rises while borrowers avoid defaulter classification.</span></p>
+              <p class="lib-field"><b>Limitations</b><span>Secondary data only; bank policy variations limit universal applicability.</span></p>
+              <p class="lib-field"><b>Output</b><span>Full report.</span></p>
+              <div class="report-links">
+                <div class="report-row"><span class="report-cap">Loan moratorium — borrower and bank effects</span><a class="report-link" href="https://drive.google.com/file/d/1MO-MuSvUr_hlUCkLot7nx0WQ8BYkMjTd/view?usp=drive_link" target="_blank" rel="noopener noreferrer">View report <span class="arrow">↗</span></a></div>
+              </div>
             </div></div></div>
           </div>
           <div class="lib-row" data-cat="banking">
@@ -624,12 +812,14 @@
             </div>
             <p class="lib-finding">Foreign-income NRIs prefer NRE deposits for tax exemption and repatriability; Indian-source income keeps NRO accounts in use despite taxation.</p>
             <div class="lib-detail"><div class="lib-detail-inner"><div>
-              <p class="lib-field"><b>The question</b>What drives NRI preference between NRE and NRO deposit schemes?</p>
-              <p class="lib-field"><b>Approach</b>Comparative analysis of HDFC Bank’s NRE/NRO features — taxation, repatriation, rates, TDS — against RBI and FEMA guidelines.</p>
-              <p class="lib-field"><b>Key finding</b>Foreign-income NRIs prefer NRE deposits for tax exemption and repatriability; Indian-source income keeps NRO accounts in use despite taxation.</p>
-              <p class="lib-field"><b>Limitations</b>HDFC Bank only — no cross-bank comparison; secondary data, no customer surveys.</p>
-              <p class="lib-field"><b>Output</b>Full report with comparison tables.</p>
-              <div class="case-cta"><div class="report-link-list"><div class="report-item"><a class="arrow-link" href="https://drive.google.com/file/d/1lDHJDYOQM1cuGc7sDE9fE-yhjT6owPne/view?usp=drive_link" target="_blank" rel="noopener noreferrer"><span>View report</span><span class="arrow">↗</span></a></div></div></div>
+              <p class="lib-field"><b>The question</b><span>What drives NRI preference between NRE and NRO deposit schemes?</span></p>
+              <p class="lib-field"><b>Approach</b><span>Comparative analysis of HDFC Bank’s NRE/NRO features — taxation, repatriation, rates, TDS — against RBI and FEMA guidelines.</span></p>
+              <p class="lib-field"><b>Key finding</b><span>Foreign-income NRIs prefer NRE deposits for tax exemption and repatriability; Indian-source income keeps NRO accounts in use despite taxation.</span></p>
+              <p class="lib-field"><b>Limitations</b><span>HDFC Bank only — no cross-bank comparison; secondary data, no customer surveys.</span></p>
+              <p class="lib-field"><b>Output</b><span>Full report with comparison tables.</span></p>
+              <div class="report-links">
+                <div class="report-row"><span class="report-cap">NRE and NRO deposit schemes — HDFC Bank</span><a class="report-link" href="https://drive.google.com/file/d/1lDHJDYOQM1cuGc7sDE9fE-yhjT6owPne/view?usp=drive_link" target="_blank" rel="noopener noreferrer">View report <span class="arrow">↗</span></a></div>
+              </div>
             </div></div></div>
           </div>
           <div class="lib-row" data-cat="research">
@@ -643,28 +833,30 @@
             </div>
             <p class="lib-finding">Three examination pathways matched to complexity, protected by the Taxpayer Bill of Rights, with independent administrative and judicial remedies.</p>
             <div class="lib-detail"><div class="lib-detail-inner"><div>
-              <p class="lib-field"><b>The question</b>How are IRS examinations structured, what rights do US taxpayers hold, and how does appeals work?</p>
-              <p class="lib-field"><b>Approach</b>Academic capstone built on IRS publications, the Internal Revenue Code and Treasury regulations.</p>
-              <p class="lib-field"><b>Key finding</b>Three examination pathways matched to complexity, protected by the Taxpayer Bill of Rights, with independent administrative and judicial remedies.</p>
-              <p class="lib-field"><b>Limitations</b>Academic project — not professional tax practice; does not constitute tax advice.</p>
-              <p class="lib-field"><b>Output</b>Capstone report.</p>
-              <div class="case-cta"><div class="report-link-list"><div class="report-item"><a class="arrow-link" href="https://drive.google.com/file/d/1vf_yJVM22RVhXzhebZaosspNmHFi_OS4/view?usp=sharing" target="_blank" rel="noopener noreferrer"><span>View report</span><span class="arrow">↗</span></a></div></div></div>
+              <p class="lib-field"><b>The question</b><span>How are IRS examinations structured, what rights do US taxpayers hold, and how does appeals work?</span></p>
+              <p class="lib-field"><b>Approach</b><span>Academic capstone built on IRS publications, the Internal Revenue Code and Treasury regulations.</span></p>
+              <p class="lib-field"><b>Key finding</b><span>Three examination pathways matched to complexity, protected by the Taxpayer Bill of Rights, with independent administrative and judicial remedies.</span></p>
+              <p class="lib-field"><b>Limitations</b><span>Academic project — not professional tax practice; does not constitute tax advice.</span></p>
+              <p class="lib-field"><b>Output</b><span>Capstone report.</span></p>
+              <div class="report-links">
+                <div class="report-row"><span class="report-cap">IRS examination and appeals — research capstone</span><a class="report-link" href="https://drive.google.com/file/d/1vf_yJVM22RVhXzhebZaosspNmHFi_OS4/view?usp=sharing" target="_blank" rel="noopener noreferrer">View report <span class="arrow">↗</span></a></div>
+              </div>
             </div></div></div>
           </div>
           <div class="lib-row" data-cat="markets">
             <button class="lib-head" data-acc-btn aria-expanded="false">
               <span class="lib-num">09</span>
               <span class="lib-name">Independent Stock Market Research<span class="lib-cat">Capital Markets · Independent</span></span>
-              <span class="lib-meta lib-meta--pending">Journal · Models · Pending</span>
+              <span class="lib-meta lib-meta--pending">Journal · Models · No report</span>
               <span class="lib-arrow" aria-hidden="true">→</span>
             </button>
-            <p class="lib-finding">A documented process: planned entries, position sizing, stop discipline and reviewed exits across journaled trades. <span class="pending-chip">Report link pending</span></p>
+            <p class="lib-finding">A documented process: planned entries, position sizing, stop discipline and reviewed exits across journaled trades. <span class="pending-chip">No published report</span></p>
             <div class="lib-detail"><div class="lib-detail-inner"><div>
-              <p class="lib-field"><b>The question</b>Can a repeatable, journaled process for reading the market be built and reviewed?</p>
-              <p class="lib-field"><b>Approach</b>Pattern-based swing-trading journal with post-trade review, alongside equity research models and DCF/3-statement exercises.</p>
-              <p class="lib-field"><b>Key finding</b>A documented process: planned entries, position sizing, stop discipline and reviewed exits across journaled trades.</p>
-              <p class="lib-field"><b>Limitations</b>Personal practice over a limited period — not professional employment; no long-term performance claims.</p>
-              <p class="lib-field"><b>Output</b>Trading journal and research models; personal practice documented through journaled work. <span class="pending-chip">Report link pending</span></p>
+              <p class="lib-field"><b>The question</b><span>Can a repeatable, journaled process for reading the market be built and reviewed?</span></p>
+              <p class="lib-field"><b>Approach</b><span>Pattern-based swing-trading journal with post-trade review, alongside equity research models and DCF/3-statement exercises.</span></p>
+              <p class="lib-field"><b>Key finding</b><span>A documented process: planned entries, position sizing, stop discipline and reviewed exits across journaled trades.</span></p>
+              <p class="lib-field"><b>Limitations</b><span>Personal practice over a limited period — not professional employment; no long-term performance claims.</span></p>
+              <p class="lib-field"><b>Output</b><span>Trading journal and research models; personal practice documented through journaled work.</span></p>
             </div></div></div>
           </div>
 
@@ -692,14 +884,155 @@
       </div>
     </section>
 
-    <!-- 08 / CREDENTIALS -->
+    <!-- EXPERIENCE -->
+    <section class="section section--stone" id="experience" aria-labelledby="exp-title">
+      <div class="container">
+        <div class="sec-head rv">
+          <p class="sec-label"><span class="sec-num">06</span>Experience</p>
+          <div>
+            <h2 class="sec-title" id="exp-title">Professional experience, stated plainly.</h2>
+            <p class="sec-lead">Internships and independent work, described in the capacity they were performed. No role is inflated beyond its scope.</p>
+            <div class="sec-aside"><a class="link-arrow" href="experience.html">Full experience record <span class="arrow">→</span></a></div>
+          </div>
+        </div>
+
+        <div class="timeline">
+          <article class="tl-item rv">
+            <span class="tl-year">2026</span>
+            <div class="tl-body">
+              <h3 class="tl-org">G M Achhra &amp; Associates</h3>
+              <p class="tl-role">Audit &amp; Accounts Intern <span class="dot">·</span> May 2026 — July 2026</p>
+              <p class="tl-text">Supported live client-engagement audit work through transaction verification, substantive testing, ledger scrutiny, GST verification and accounting documentation.</p>
+              <ul class="tl-actions">
+                <li>Verified purchase, sales, payment, receipt and journal transactions against invoices and bank statements.</li>
+                <li>Scrutinised 1,000+ ledger accounts and verified 3,000+ financial transactions as part of audit-support procedures.</li>
+                <li>Worked with TallyPrime and Excel for accounting entries, reconciliations, GST-related verification and supporting documentation.</li>
+              </ul>
+              <div class="result-strip">
+                <div class="result-item"><b class="tnum">3,000+</b><span>Financial transactions verified</span></div>
+                <div class="result-item"><b class="tnum">1,000+</b><span>Ledger accounts scrutinised</span></div>
+              </div>
+              <p class="tl-text">Built practical understanding of how transaction-level evidence, reconciliations and supporting documentation contribute to reliable audit working papers.</p>
+              <div class="tl-tags"><span class="pill pill--gold">TallyPrime</span><span class="pill">Excel</span><span class="pill">Statutory audit support</span><span class="pill">Substantive testing</span></div>
+            </div>
+          </article>
+
+          <article class="tl-item rv">
+            <span class="tl-year">2025</span>
+            <div class="tl-body">
+              <h3 class="tl-org">Finsckool</h3>
+              <p class="tl-role">Equity Research &amp; Investment Banking Intern <span class="dot">·</span> July 2025 — August 2025 · Remote</p>
+              <span class="tl-kind">Internship · Remote</span>
+              <p class="tl-text">Analysed financial statements and business performance while applying fundamental and technical analysis, including RSI, MACD and price-action techniques.</p>
+              <ul class="tl-actions">
+                <li>Financial statement and business-performance analysis.</li>
+                <li>Fundamental and technical analysis.</li>
+                <li>RSI, MACD and price-action application.</li>
+              </ul>
+              <div class="tl-tags"><span class="pill pill--gold">Equity research</span><span class="pill">Fundamental analysis</span><span class="pill">Technical analysis</span></div>
+            </div>
+          </article>
+
+          <article class="tl-item rv">
+            <span class="tl-year">2023 —</span>
+            <div class="tl-body">
+              <h3 class="tl-org">Independent Stock Market Research / Trading</h3>
+              <p class="tl-role">Independent Market Experience <span class="dot">·</span> July 2023 — Present</p>
+              <span class="tl-kind">Independent · Not employment</span>
+              <p class="tl-text">Self-directed equity-market research focused on technical analysis, price action, position sizing, stop discipline and trading-journal maintenance.</p>
+              <p class="tl-text">Built market discipline through structured research, risk-management practice and maintaining a trading journal around market decisions.</p>
+              <div class="tl-tags"><span class="pill pill--gold">Technical analysis</span><span class="pill">Risk management</span><span class="pill">Trading journal</span><span class="pill">Market psychology</span></div>
+            </div>
+          </article>
+
+          <article class="tl-item rv">
+            <span class="tl-year">2025</span>
+            <div class="tl-body">
+              <h3 class="tl-org">Edunet Foundation</h3>
+              <p class="tl-role">AI/ML Intern · AICTE + IBM · 6 weeks <span class="dot">·</span> June 2025 — July 2025 · Remote</p>
+              <p class="tl-text">Completed a six-week AI/ML internship through the AICTE + IBM programme. Introductory artificial-intelligence and machine-learning coursework — not a finance role.</p>
+            </div>
+          </article>
+
+          <article class="tl-item rv">
+            <span class="tl-year">2025</span>
+            <div class="tl-body">
+              <h3 class="tl-org">Kshitiksha Foundation</h3>
+              <p class="tl-role">Digital Content &amp; Fundraising Intern <span class="dot">·</span> April 2025 — May 2025 · Remote</p>
+              <p class="tl-text">Supported digital content and fundraising activities, including a seven-day fundraising campaign. Community internship — not a finance role.</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="section--tight">
+          <div class="toolkit rv">
+            <div>
+              <p class="sec-label"><span class="sec-num">06.1</span>Toolkit</p>
+              <h3 class="sec-title" style="font-size:clamp(1.5rem,2.2vw,2rem);margin-top:10px;">Tools, in the work.</h3>
+              <p class="sec-lead" style="margin-top:10px;">Each tool is listed with where it was actually applied, not as a standalone claim.</p>
+            </div>
+            <div class="tool-list">
+              <div class="tool-row"><b>TallyPrime</b><span>Accounting entries · Books maintenance — G M Achhra audit work</span></div>
+              <div class="tool-row"><b>Excel</b><span>GST reconciliation · Transaction analysis · Ratio analysis · Two-year projections — audit work and Tech Mahindra analysis</span></div>
+              <div class="tool-row"><b>Power BI</b><span>Analytics learning exposure — coursework</span></div>
+              <div class="tool-row"><b>Financial Modelling</b><span>Financial statement and projection work — Tech Mahindra projections, DCF exercises</span></div>
+              <div class="tool-row"><b>GST Records</b><span>GST-related verification during audit work</span></div>
+              <div class="tool-row"><b>Audit Documentation</b><span>Working papers · Supporting evidence — 3,000+ transactions, 1,000+ ledgers</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- APPROACH -->
+    <section class="section section--dark" id="approach" aria-labelledby="think-title">
+      <div class="container">
+        <div class="sec-head rv">
+          <p class="sec-label"><span class="sec-num">07</span>Approach</p>
+          <div>
+            <h2 class="sec-title" id="think-title">How the work is checked.</h2>
+            <p class="sec-lead">A practical working approach — not an official framework, standard or methodology. Each step is demonstrated in the records above.</p>
+          </div>
+        </div>
+
+        <div class="flow rv" aria-label="Working approach: understand, analyse, verify, interpret, document, conclude">
+          <span class="flow-step"><i>01</i><b>Understand</b></span>
+          <span class="flow-step"><i>02</i><b>Analyse</b></span>
+          <span class="flow-step"><i>03</i><b>Verify</b></span>
+          <span class="flow-step"><i>04</i><b>Interpret</b></span>
+          <span class="flow-step"><i>05</i><b>Document</b></span>
+          <span class="flow-step"><i>06</i><b>Conclude</b></span>
+        </div>
+
+        <div class="mini-grid">
+          <div class="mini rv">
+            <span class="star-kicker">Audit — Transaction verification</span>
+            <p>Question → trace the transaction → inspect supporting evidence → verify the accounting treatment → document the conclusion. Applied across 3,000+ vouched transactions and 1,000+ scrutinized ledgers at G M Achhra &amp; Associates.</p>
+          </div>
+          <div class="mini rv d1">
+            <span class="star-kicker">Corporate action — Jindal 4:1 bonus</span>
+            <p>Question → analyse reserve capitalisation → examine the share-count effect → evaluate EPS and BVPS changes → interpret shareholder impact. EPS declined 84.8% (₹0.92 → ₹0.14); BVPS declined ~78%, per the report’s analysis.</p>
+          </div>
+          <div class="mini rv d2">
+            <span class="star-kicker">Financial analysis — Tech Mahindra</span>
+            <p>Question → examine ten years of statements → analyse ratios and trends → build two-year projections → state what the trends support. Liquidity held above 1:1 throughout; gross margin 60–63%; operating margin troughed at 4.40% in 2023–24.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CREDENTIALS -->
     <section class="section" id="credentials" aria-labelledby="cred-title">
       <div class="container">
         <div class="sec-head rv">
-          <p class="sec-label"><span class="num">08 /</span> Credentials</p>
-          <h2 class="sec-title" id="cred-title">Qualifications, by type.</h2>
-          <p class="lead">Passed credentials first. Simulations and participations are labelled as what they are.</p>
+          <p class="sec-label"><span class="sec-num">08</span>Credentials</p>
+          <div>
+            <h2 class="sec-title" id="cred-title">Qualifications, by type.</h2>
+            <p class="sec-lead">Passed credentials first. Simulations and participations are labelled as what they are — never presented as certifications.</p>
+            <div class="sec-aside"><a class="link-arrow" href="certifications.html">Full credentials archive <span class="arrow">→</span></a></div>
+          </div>
         </div>
+
         <div class="cred-arch">
           <div class="cred-cat rv">
             <div><h3>Examined / Passed</h3><p>NISM examinations passed.</p></div>
@@ -716,6 +1049,7 @@
               </div>
             </div>
           </div>
+
           <div class="cred-cat rv">
             <div><h3>Data / Analytics</h3><p>Completed learning programmes.</p></div>
             <div class="cred-rows">
@@ -731,6 +1065,7 @@
               </div>
             </div>
           </div>
+
           <div class="cred-cat rv">
             <div><h3>Participation / Programs</h3><p>Practice programmes — not employment, not certification.</p></div>
             <div class="cred-rows">
@@ -746,29 +1081,27 @@
             </div>
           </div>
         </div>
-        <p class="rv mt-8"><a class="arrow-link" href="certifications.html">Full credentials archive<span class="arrow"> →</span></a></p>
       </div>
     </section>
 
-    <!-- 09 / ABOUT -->
-    <section class="section section--ruled" id="about" aria-labelledby="about-title">
+    <!-- ABOUT -->
+    <section class="section section--stone" id="about" aria-labelledby="about-title">
       <div class="container">
         <div class="sec-head rv">
-          <p class="sec-label"><span class="num">09 /</span> About</p>
-          <h2 class="sec-title" id="about-title">Position, in brief.</h2>
-        </div>
-        <div class="about-split">
-          <div class="portrait-stage portrait-stage--small rv">
-            <span class="portrait-vlabel" aria-hidden="true">Finance · Audit · Research</span>
-            <figure class="photo-plate">
-              <img class="portrait" src="assets/bhojraj-kamdi-profile.webp" alt="Portrait of Bhojraj Kamdi" width="722" height="928" loading="lazy" decoding="async">
-            </figure>
+          <p class="sec-label"><span class="sec-num">09</span>About</p>
+          <div>
+            <h2 class="sec-title" id="about-title">Science first. Then finance.</h2>
+            <p class="sec-lead">A quantitative undergraduate route into audit, financial analysis and equity research — with the limits of each piece of work stated openly.</p>
+            <div class="sec-aside"><a class="link-arrow" href="about.html">Full background <span class="arrow">→</span></a></div>
           </div>
-          <div class="rv d1">
-            <h3 class="about-split-title">Where I am now</h3>
-            <p class="lead" style="margin:0;">PGDM — Finance ’27, Imperial School of Banking and Management Studies, Pune. Earlier: B.Sc. in Physics, Chemistry and Mathematics from RTM Nagpur University.</p>
+        </div>
+
+        <div class="about-split">
+          <div class="rv">
+            <p class="lead">PGDM — Finance ’27, Imperial School of Banking and Management Studies, Pune. Earlier: B.Sc. in Physics, Chemistry and Mathematics from RTM Nagpur University.</p>
             <p class="trajectory" aria-label="Trajectory: science, finance, audit, financial analysis, equity research">Science → Finance → Audit → Financial Analysis → Equity Research / Capital Markets</p>
-            <div class="about-grid about-grid--two">
+            <p class="mt-6" style="font-size:0.96rem;line-height:1.75;color:var(--ink-soft);max-width:62ch;">My route into finance started outside it — a science degree built the quantitative habits I now apply to statements, ratios and market data. Since then: a CA-firm audit internship, an equity research internship, and independent market study documented through a trading journal. The fourteen records on this site trace that path.</p>
+            <div class="about-grid">
               <div class="about-cell">
                 <h3>What I bring</h3>
                 <ul>
@@ -787,36 +1120,46 @@
                 </ul>
               </div>
             </div>
-            <p class="mt-8"><a class="arrow-link" href="about.html">Full background<span class="arrow"> →</span></a></p>
+          </div>
+
+          <div class="rv d1">
+            <div class="portrait-frame">
+              <img class="portrait-img" src="assets/bhojraj-kamdi-profile.webp" alt="Portrait of Bhojraj Kamdi" width="722" height="928" loading="lazy" decoding="async">
+            </div>
+            <p class="portrait-caption"><span>02 / About</span><span>Pune · India</span></p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- 10 / IN PRACTICE -->
+    <!-- IN PRACTICE -->
     <section class="section" id="in-practice" aria-labelledby="ip-title">
       <div class="container">
         <div class="sec-head rv">
-          <p class="sec-label"><span class="num">10 /</span> Industry exposure &amp; communication</p>
-          <h2 class="sec-title" id="ip-title">Industry exposure &amp; communication.</h2>
-          <p class="lead">Public speaking · Event hosting · Collaboration · Industry exposure. A record of presentations, event hosting and industry interactions beyond conventional coursework.</p>
+          <p class="sec-label"><span class="sec-num">10</span>Industry exposure</p>
+          <div>
+            <h2 class="sec-title" id="ip-title">Industry exposure &amp; communication.</h2>
+            <p class="sec-lead">Public speaking, event hosting, industry visits and a sustainable-finance programme — a record beyond conventional coursework.</p>
+          </div>
         </div>
 
         <div class="ip-grid">
           <div class="ip-item ip-main rv">
-            <div class="ip-slides" data-ip role="region" aria-roledescription="carousel" aria-label="Industry Masterclass photographs" aria-live="polite" tabindex="0">
-              <figure class="ip-slide active"><img src="assets/in-practice/masterclass/masterclass-01.webp" width="800" height="450" alt="Speaker presenting Hedge Fund and Private Equity frameworks beside an Imperial and EisnerAmper backdrop at a masterclass." fetchpriority="high" decoding="async"></figure>
-              <figure class="ip-slide"><img src="assets/in-practice/masterclass/masterclass-02.webp" width="800" height="450" loading="lazy" decoding="async" alt="Speakers and students on stage during the industry masterclass session."></figure>
-              <figure class="ip-slide"><img src="assets/in-practice/masterclass/masterclass-03.webp" width="800" height="601" loading="lazy" decoding="async" alt="Audience seated in an auditorium during the industry masterclass at Imperial."></figure>
-              <span class="ip-paused" data-ip-paused hidden>Paused</span>
-            </div>
-            <div class="ip-bar">
-              <button class="ip-btn" data-ip-prev aria-label="Previous image">←</button>
-              <span class="ip-count">01 / 03</span>
-              <span class="ip-progress" aria-hidden="true"><i></i></span>
-              <span class="ip-dots" role="tablist" aria-label="Slide navigation"></span>
-              <button class="ip-btn" data-ip-pause aria-label="Pause slideshow" aria-pressed="false">❚❚</button>
-              <button class="ip-btn" data-ip-next aria-label="Next image">→</button>
+            <div class="ip-media">
+              <div class="ip-slides" data-ip role="region" aria-roledescription="carousel" aria-label="Industry Masterclass photographs" aria-live="polite" tabindex="0">
+                <figure class="ip-slide active"><img src="assets/in-practice/masterclass/masterclass-01.webp" width="800" height="450" alt="Speaker presenting Hedge Fund and Private Equity frameworks beside an Imperial and EisnerAmper backdrop at a masterclass." fetchpriority="high" decoding="async"></figure>
+                <figure class="ip-slide"><img src="assets/in-practice/masterclass/masterclass-02.webp" width="800" height="450" loading="lazy" decoding="async" alt="Speakers and students on stage during the industry masterclass session."></figure>
+                <figure class="ip-slide"><img src="assets/in-practice/masterclass/masterclass-03.webp" width="800" height="601" loading="lazy" decoding="async" alt="Audience seated in an auditorium during the industry masterclass at Imperial."></figure>
+                <span class="ip-paused" data-ip-paused hidden>Paused</span>
+              </div>
+              <div class="ip-bar">
+                <button class="ip-btn" data-ip-prev aria-label="Previous image">←</button>
+                <span class="ip-count">01 / 03</span>
+                <span class="ip-progress" aria-hidden="true"><i></i></span>
+                <span class="ip-dots" role="tablist" aria-label="Slide navigation"></span>
+                <button class="ip-btn" data-ip-pause aria-label="Pause slideshow" aria-pressed="false">❚❚</button>
+                <button class="ip-btn" data-ip-next aria-label="Next image">→</button>
+              </div>
             </div>
             <div class="ip-cap">
               <span class="ip-cat">Industry exposure</span>
@@ -828,21 +1171,23 @@
           </div>
 
           <div class="ip-item ip-side rv d1">
-            <div class="ip-slides" data-ip role="region" aria-roledescription="carousel" aria-label="PACCAR India photographs" aria-live="polite" tabindex="0">
-              <figure class="ip-slide active"><img src="assets/in-practice/paccar/paccar-01.webp" width="800" height="450" alt="Student group photographed in front of a PACCAR India brand wall during an academic industry visit." fetchpriority="high" decoding="async"></figure>
-              <figure class="ip-slide"><img src="assets/in-practice/paccar/paccar-02.webp" width="720" height="1280" loading="lazy" decoding="async" alt="Bhojraj Kamdi standing beside a red commercial truck at PACCAR India."></figure>
-              <figure class="ip-slide"><img src="assets/in-practice/paccar/paccar-03.webp" width="720" height="1280" loading="lazy" decoding="async" alt="Bhojraj Kamdi photographed against the PACCAR India wall during the industry visit."></figure>
-              <figure class="ip-slide"><img src="assets/in-practice/paccar/paccar-04.webp" width="800" height="450" loading="lazy" decoding="async" alt="Student group with company representatives during the PACCAR India visit."></figure>
-              <figure class="ip-slide"><img src="assets/in-practice/paccar/paccar-05.webp" width="720" height="1280" loading="lazy" decoding="async" alt="Interior cabin of a commercial truck at the PACCAR India facility."></figure>
-              <span class="ip-paused" data-ip-paused hidden>Paused</span>
-            </div>
-            <div class="ip-bar">
-              <button class="ip-btn" data-ip-prev aria-label="Previous image">←</button>
-              <span class="ip-count">01 / 05</span>
-              <span class="ip-progress" aria-hidden="true"><i></i></span>
-              <span class="ip-dots" role="tablist" aria-label="Slide navigation"></span>
-              <button class="ip-btn" data-ip-pause aria-label="Pause slideshow" aria-pressed="false">❚❚</button>
-              <button class="ip-btn" data-ip-next aria-label="Next image">→</button>
+            <div class="ip-media">
+              <div class="ip-slides" data-ip role="region" aria-roledescription="carousel" aria-label="PACCAR India photographs" aria-live="polite" tabindex="0">
+                <figure class="ip-slide active"><img src="assets/in-practice/paccar/paccar-01.webp" width="800" height="450" alt="Student group photographed in front of a PACCAR India brand wall during an academic industry visit." fetchpriority="high" decoding="async"></figure>
+                <figure class="ip-slide"><img src="assets/in-practice/paccar/paccar-02.webp" width="720" height="1280" loading="lazy" decoding="async" alt="Bhojraj Kamdi standing beside a red commercial truck at PACCAR India." style="object-position:50% 30%"></figure>
+                <figure class="ip-slide"><img src="assets/in-practice/paccar/paccar-03.webp" width="720" height="1280" loading="lazy" decoding="async" alt="Bhojraj Kamdi photographed against the PACCAR India wall during the industry visit." style="object-position:50% 28%"></figure>
+                <figure class="ip-slide"><img src="assets/in-practice/paccar/paccar-04.webp" width="800" height="450" loading="lazy" decoding="async" alt="Student group with company representatives during the PACCAR India visit."></figure>
+                <figure class="ip-slide"><img src="assets/in-practice/paccar/paccar-05.webp" width="720" height="1280" loading="lazy" decoding="async" alt="Interior cabin of a commercial truck at the PACCAR India facility." style="object-position:50% 45%"></figure>
+                <span class="ip-paused" data-ip-paused hidden>Paused</span>
+              </div>
+              <div class="ip-bar">
+                <button class="ip-btn" data-ip-prev aria-label="Previous image">←</button>
+                <span class="ip-count">01 / 05</span>
+                <span class="ip-progress" aria-hidden="true"><i></i></span>
+                <span class="ip-dots" role="tablist" aria-label="Slide navigation"></span>
+                <button class="ip-btn" data-ip-pause aria-label="Pause slideshow" aria-pressed="false">❚❚</button>
+                <button class="ip-btn" data-ip-next aria-label="Next image">→</button>
+              </div>
             </div>
             <div class="ip-cap">
               <span class="ip-cat">Industry exposure</span>
@@ -907,7 +1252,7 @@
           </article>
 
           <div class="ip-item ip-wide rv">
-            <div>
+            <div class="ip-media">
               <div class="ip-slides" data-ip role="region" aria-roledescription="carousel" aria-label="Inizio Deeksharambh photographs" aria-live="polite" tabindex="0">
                 <figure class="ip-slide active"><img src="assets/in-practice/inizio/inizio-01.webp" width="800" height="533" alt="Two student hosts speaking at a podium during Inizio Deeksharambh 2026 at Imperial." fetchpriority="high" decoding="async"></figure>
                 <figure class="ip-slide"><img src="assets/in-practice/inizio/inizio-02.webp" width="800" height="533" loading="lazy" decoding="async" alt="Student hosts with a guest on stage during the Inizio induction programme."></figure>
@@ -936,100 +1281,123 @@
       </div>
     </section>
 
-    <!-- 11 / EVIDENCE INDEX -->
+    <!-- EVIDENCE INDEX -->
     <section class="section section--stone" aria-labelledby="ev-title">
       <div class="container">
         <div class="sec-head rv">
-          <p class="sec-label"><span class="num">11 /</span> Evidence index</p>
-          <h2 class="sec-title" id="ev-title">Everything, one level down.</h2>
-          <p class="lead">Reports, experience records, credentials and the current CV behind the profile.</p>
+          <p class="sec-label"><span class="sec-num">11</span>Evidence index</p>
+          <div>
+            <h2 class="sec-title" id="ev-title">Everything, one level down.</h2>
+            <p class="sec-lead">Reports, experience records, credentials and the current CV behind the profile.</p>
+          </div>
         </div>
-        <div class="lib rv">
-          <div class="lib-row">
-            <a class="lib-head" href="projects.html">
-              <span class="lib-num">R</span>
-              <span class="lib-name">Project reports<span class="lib-cat">Research library</span></span>
-              <span class="lib-meta">09 projects</span>
-              <span class="lib-arrow" aria-hidden="true">↗</span>
-            </a>
-          </div>
-          <div class="lib-row">
-            <a class="lib-head" href="experience.html">
-              <span class="lib-num">E</span>
-              <span class="lib-name">Experience record<span class="lib-cat">Audit · Research · Independent</span></span>
-              <span class="lib-meta">Audit · Research · Independent</span>
-              <span class="lib-arrow" aria-hidden="true">↗</span>
-            </a>
-          </div>
-          <div class="lib-row">
-            <a class="lib-head" href="certifications.html">
-              <span class="lib-num">C</span>
-              <span class="lib-name">Certificates &amp; credentials<span class="lib-cat">NISM · EY · Courses</span></span>
-              <span class="lib-meta">NISM · EY · Courses</span>
-              <span class="lib-arrow" aria-hidden="true">↗</span>
-            </a>
-          </div>
-          <div class="lib-row">
-            <a class="lib-head" href="https://docs.google.com/document/d/1BFeB2oi3oYkQRqjwEmUpC3M__p_ACSpZ/edit" target="_blank" rel="noopener noreferrer">
-              <span class="lib-num">V</span>
-              <span class="lib-name">Current CV<span class="lib-cat">Resume · Google Doc</span></span>
-              <span class="lib-meta">Resume · Google Doc</span>
-              <span class="lib-arrow" aria-hidden="true">↗</span>
-            </a>
-          </div>
+        <div class="index-list rv">
+          <a class="index-row" href="projects.html">
+            <span class="index-num">R</span>
+            <span><span class="index-title">Project reports</span><span class="index-desc">Research library</span></span>
+            <span class="index-meta">14 projects</span>
+            <span class="index-arrow" aria-hidden="true">↗</span>
+          </a>
+          <a class="index-row" href="experience.html">
+            <span class="index-num">E</span>
+            <span><span class="index-title">Experience record</span><span class="index-desc">Audit · Research · Independent</span></span>
+            <span class="index-meta">Audit · Research · Independent</span>
+            <span class="index-arrow" aria-hidden="true">↗</span>
+          </a>
+          <a class="index-row" href="certifications.html">
+            <span class="index-num">C</span>
+            <span><span class="index-title">Certificates &amp; credentials</span><span class="index-desc">NISM · EY · Courses</span></span>
+            <span class="index-meta">NISM · EY · Courses</span>
+            <span class="index-arrow" aria-hidden="true">↗</span>
+          </a>
+          <a class="index-row" href="https://docs.google.com/document/d/1BFeB2oi3oYkQRqjwEmUpC3M__p_ACSpZ/edit" target="_blank" rel="noopener noreferrer">
+            <span class="index-num">V</span>
+            <span><span class="index-title">Current CV</span><span class="index-desc">Resume · Google Doc</span></span>
+            <span class="index-meta">Resume · Google Doc</span>
+            <span class="index-arrow" aria-hidden="true">↗</span>
+          </a>
         </div>
       </div>
     </section>
 
-    <!-- 12 / CONTACT -->
+    <!-- CONTACT -->
     <section class="section" id="contact" aria-labelledby="contact-title">
-      <div class="container narrow">
-        <p class="sec-label rv"><span class="num">12 /</span> Contact</p>
-        <h2 class="contact-big rv" id="contact-title">Open to conversations around finance, audit, analysis and research.</h2>
-        <div class="rv d1 contact-target">
-          <p><b>Currently targeting</b>Audit &amp; Assurance · Financial Analysis · Corporate Finance</p>
-          <p><b>Secondary interests</b>Equity Research · Capital Markets</p>
-        </div>
-        <div class="rv d2" style="margin-top:32px;">
-          <div class="contact-line">
-            <span class="contact-kicker">Email</span>
-            <a class="contact-value" href="mailto:bhojrajkamdi14@gmail.com">bhojrajkamdi14@gmail.com <span class="arrow">→</span></a>
-          </div>
-          <div class="contact-line">
-            <span class="contact-kicker">LinkedIn</span>
-            <a class="contact-value" href="https://www.linkedin.com/in/bhojrajkamdi" target="_blank" rel="noopener noreferrer">linkedin.com/in/bhojrajkamdi <span class="arrow">↗</span></a>
-          </div>
-          <div class="contact-line">
-            <span class="contact-kicker">Resume</span>
-            <a class="contact-value" href="https://docs.google.com/document/d/1BFeB2oi3oYkQRqjwEmUpC3M__p_ACSpZ/edit" target="_blank" rel="noopener noreferrer">View resume <span class="arrow">↗</span></a>
+      <div class="container">
+        <div class="sec-head rv">
+          <p class="sec-label"><span class="sec-num">12</span>Contact</p>
+          <div>
+            <h2 class="contact-big" id="contact-title">Open to conversations around finance, audit, analysis and research.</h2>
           </div>
         </div>
-        <p class="contact-meta rv d2">PGDM-Finance'27 · Pune · India · Open to opportunities</p>
+
+        <div class="grid12">
+          <div class="col-7 rv">
+            <div class="contact-lines">
+              <div class="contact-line">
+                <span class="contact-kicker">Email</span>
+                <a class="contact-value" href="mailto:bhojrajkamdi14@gmail.com">bhojrajkamdi14@gmail.com <span class="arrow">→</span></a>
+                <span></span>
+              </div>
+              <div class="contact-line">
+                <span class="contact-kicker">LinkedIn</span>
+                <a class="contact-value" href="https://www.linkedin.com/in/bhojrajkamdi" target="_blank" rel="noopener noreferrer">linkedin.com/in/bhojrajkamdi <span class="arrow">↗</span></a>
+                <span></span>
+              </div>
+              <div class="contact-line">
+                <span class="contact-kicker">Resume</span>
+                <a class="contact-value" href="https://docs.google.com/document/d/1BFeB2oi3oYkQRqjwEmUpC3M__p_ACSpZ/edit" target="_blank" rel="noopener noreferrer">View resume <span class="arrow">↗</span></a>
+                <span></span>
+              </div>
+            </div>
+            <p class="contact-meta">PGDM-Finance'27 · Pune · India · Open to opportunities</p>
+          </div>
+          <div class="col-5 rv d1">
+            <div class="contact-target">
+              <p><b>Currently targeting</b><span>Audit &amp; Assurance · Financial Analysis · Corporate Finance</span></p>
+              <p><b>Secondary interests</b><span>Equity Research · Capital Markets</span></p>
+              <p><b>Response</b><span>Email or LinkedIn is the most direct route.</span></p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   </main>
 
   <footer class="footer">
     <div class="container">
-      <div class="footer-grid">
+      <div class="footer-top">
         <div class="footer-brand">
-          <p class="serif">Bhojraj Kamdi<span class="brand-dot">.</span></p>
-          <p>Finance · Audit · Research</p>
-          <p>Pune · India · PGDM-Finance'27 · Open to opportunities</p>
+          <p class="wordmark-name">Bhojraj Kamdi</p>
+          <p>Finance · Audit · Research. A documented record of audit exposure, financial analysis and equity research.</p>
         </div>
-        <div class="footer-links">
-          <a href="https://www.linkedin.com/in/bhojrajkamdi" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
-          <a href="mailto:bhojrajkamdi14@gmail.com">Email</a>
-          <a href="https://docs.google.com/document/d/1BFeB2oi3oYkQRqjwEmUpC3M__p_ACSpZ/edit" target="_blank" rel="noopener noreferrer">Resume</a>
+        <div>
+          <p class="footer-h">Navigate</p>
+          <nav class="footer-nav" aria-label="Footer">
+            <a href="#work">Selected work</a>
+            <a href="projects.html">Project archive</a>
+            <a href="experience.html">Experience</a>
+            <a href="certifications.html">Credentials</a>
+            <a href="about.html">About</a>
+            <a href="resume.html">Resume</a>
+          </nav>
+        </div>
+        <div>
+          <p class="footer-h">Contact</p>
+          <div class="footer-contact">
+            <a href="mailto:bhojrajkamdi14@gmail.com">bhojrajkamdi14@gmail.com</a>
+            <a href="https://www.linkedin.com/in/bhojrajkamdi" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+            <a href="https://docs.google.com/document/d/1BFeB2oi3oYkQRqjwEmUpC3M__p_ACSpZ/edit" target="_blank" rel="noopener noreferrer">Resume ↗</a>
+            <span>Pune · India</span>
+          </div>
         </div>
       </div>
       <div class="footer-bottom">
         <span>© <span id="year">2026</span> Bhojraj Kamdi</span>
-        <span>Pune, India</span>
+        <span>PGDM-Finance'27 · Pune, India</span>
       </div>
     </div>
   </footer>
 
-  <script src="assets/main.js?v=2"></script>
+  <script src="assets/main.js?v=3"></script>
 </body>
 </html>

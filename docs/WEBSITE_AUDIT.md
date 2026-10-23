@@ -2,58 +2,90 @@
 
 ## Scope
 
-Repository: [bhojrajkamdi-1473/portfolio](https://github.com/bhojrajkamdi-1473/portfolio)  
+Repository: [bhojrajkamdi-1473/portfolio](https://github.com/bhojrajkamdi-1473/portfolio)
+
 Live site: https://bhojrajkamdi-1473.github.io/portfolio/
 
-This is a code-level audit record for the current implementation pass. It does not claim a full visual, accessibility, or external-link audit has been completed.
+Audit date: 23 October 2026
 
-## Findings addressed
+This is a rendered-browser and source-level audit of the finance-editorial redesign. It records what was actually tested and separates automated checks from human visual sign-off and third-party access verification.
 
-### IIM Indore slideshow consistency
+## Change summary
 
-- The IIM Indore Sustainable Finance programme was previously displayed as a static wide card, unlike the other entries in the “Industry exposure & communication” section.
-- Converted it to a four-slide editorial learning carousel.
-- Reused the existing data-ip slideshow controller and its previous/next, pagination-dot, pause/play, autoplay, and keyboard interaction hooks.
-- Added dedicated styling that follows the site's dark editorial and bronze-accent visual language.
-- Preserved the original programme description, learning takeaways, attendance classification, and LinkedIn source link.
-- The four slides cover the programme, ESG integration in investment decisions, green bonds/yield curves, and ESG impact measurement/BRSR.
+The portfolio was rebuilt as a restrained finance-editorial publication rather than a card-based template:
 
-**Important visual evidence limitation:** no IIM-specific event photographs were present in the repository's existing assets/in-practice inventory. The current slides are designed editorial learning panels, not photographs of the event. Authentic photos can be added when supplied and verified.
+- Warm paper, ink, stone and bronze palette; Newsreader display type with Geist for interface and body copy; tabular numerals, hairline rules and asymmetric composition.
+- Seven pages rebuilt on one design system: homepage, project archive, about, experience, certifications, contact and resume.
+- A canonical 14-record archive in five categories: Research 4, Audit & Accounting 3, Financial Analysis 3, Capital Markets 2, Banking 2.
+- One sticky archive filter bar with counts, replacing the earlier duplicate filter sets.
+- Explicit project records: question, method, reported figures, limitation and source link. Hypothetical audit work is labelled hypothetical; class exercises are labelled as such.
+- Five Semester 3 course documents listed separately from the numbered records.
+- No fabricated contact form; contact is by email and LinkedIn. No invented Drive IDs, client data, credentials or metrics.
+- All pre-existing report URLs and profile/certificate links were retained.
 
-### Project numbering
+## Content corrections
 
-- Aligned the five featured Semester 3 case-study badges with project archive numbering 10–14: SizeRight, Bata India, NTPC, Page Industries, and the hypothetical government-defence audit case.
+- “Nine projects” references on the about and resume pages were corrected to fourteen, matching the archive.
+- The contradictory experience note that implied no listed experience was removed.
+- Duplicate project filters were removed in favour of one canonical archive toolbar.
+- Internship research, independent research, academic work, programme participation and certification are now visibly distinct.
+- Project 02 continues to point to the same submitted course file as Project 05, with the shared-file caveat stated on the page.
+- Records 10–14 use the Semester 3 Drive folder link only; no individual report link is invented.
+- The archive fact strip describes 14 records, 5 categories and 8 projects with report links, not ambiguous “research areas” or employee-style “direct reports”.
 
-### Documentation
+## Design and source changes
 
-- Added the repository README and five files under docs/ to document the project catalogue, source register, audit status, maintenance workflow, and changes.
+- `assets/styles.css` — complete v5 design system and responsive rules.
+- All seven HTML pages — rebuilt structure and content; shared masthead, footer, skip link, metadata and versioned asset references.
+- `assets/main.js` — unchanged interaction controller. All existing hooks were preserved: `.rv`, `#topbar`, `#navToggle`, `#mobileMenu`, `[data-counter]`, `[data-ip]`, `.acc-item`, `.acc-btn`, `.lib-row`, `[data-filter]`, `[data-cat]`, `#year`.
+- `main` elements now carry `tabindex="-1"` so the skip link moves keyboard focus to page content, not just the scroll position.
+- Asset references use `assets/styles.css?v=5` and `assets/main.js?v=2`.
 
-## Source-level checks performed
+## Verification performed
 
-- Inspected the existing homepage's in-practice markup and existing carousel implementation in assets/main.js.
-- Confirmed the slideshow controller selects .ip-slide elements inside [data-ip] and creates slide dots from the slide count.
-- Preserved the existing control attributes expected by the controller.
-- Confirmed the IIM entry retains the LinkedIn post URL.
-- Updated the homepage's five Semester 3 case-study number badges to 10–14.
-- Existing project archive and other event galleries were not intentionally modified by the IIM carousel change.
+### Rendered layout
 
-## Checks not yet independently verified
+Playwright with installed Chrome, 7 pages × 5 viewport widths (1440, 1180, 980, 760, 480 px), 35 runs:
 
-The following checks must not be described as passed until performed in an actual browser or suitable test environment:
+- Zero horizontal document overflow.
+- Zero broken images.
+- Zero console errors and zero page errors.
+- Zero failed site resources. One aborted request per page went to `filtering.adblock360.com`, an environment ad-block probe not referenced by the site.
+- No rail/body overlap in archive records.
+- Filter chips on narrow screens sit inside their intentional horizontal scroll container; the page itself does not overflow.
 
-- Visual rendering at desktop, tablet, and mobile sizes.
-- Actual autoplay and manual-control behaviour on the published site.
-- Browser console errors.
-- Automated HTML validation.
-- Automated accessibility testing.
-- External Google Docs public accessibility.
-- Live GitHub Pages publication of the newest commits.
-- Full regression comparison of every project, interaction, and link.
+### Interaction
 
-## Remaining priority actions
+26 checks passed:
 
-1. Add authentic IIM Indore event photos if they are available; convert them to optimised web formats and use accurate alt text.
-2. Inspect the five individual Google Docs and map their contents to portfolio projects.
-3. Run a rendered-browser check of the IIM slideshow and all other carousels.
-4. Complete internal/external link checks and confirm category counts against visible records.
-5. Compare the complete final repository diff with a pre-change baseline.
+- Archive filters All 14 / Research 4 / Audit 3 / Financial Analysis 3 / Capital Markets 2 / Banking 2, with exactly one pressed chip.
+- Homepage library filters return the same counts.
+- Library and featured-case accordions open and close with correct `aria-expanded` state.
+- Counters settle at 3,000+, 1,000+ and 100K+.
+- Featured carousel next control advances 01/03 → 02/03; autoplay advances to 03/03.
+- Archive toolbar remains sticky at 84 px beneath the 85 px masthead.
+- Deep link to `#p09` clears the sticky chrome after smooth scrolling settles.
+- Skip link is visible on focus at desktop and 480 px, and activating it focuses `main`.
+- Mobile menu opens, locks body scroll, exposes `aria-expanded="true"` and closes on Escape.
+- Reduced-motion mode shows all 45 reveal elements on the homepage and does not autoplay the carousel.
+
+### Link and structure integrity
+
+- 172 internal `href` references checked; no missing files or anchors.
+- 93 element IDs checked; no duplicates.
+- 26 unique external non-font URLs match the pre-redesign baseline exactly. The three font URLs are unchanged apart from HTML entity normalisation.
+- All external links that open in a new tab use `rel="noopener noreferrer"`.
+- Every page has one `h1`, a title, a meta description and valid local stylesheet/script references.
+
+## Limitations
+
+- Google Drive access has not been verified from a signed-out session. Owner-session access does not prove public access.
+- The five Semester 3 course documents have not been independently read; only supplied URLs and titles are presented.
+- No individual public report links exist for records 10–14; the Drive folder is used without implying per-project documents.
+- Automated layout and interaction checks are not a human aesthetic sign-off. The owner should review the rendered pages once before treating the visual design as final.
+- Case-study figures are report-dated and assumption-dependent; they are not current market data or investment advice.
+- The government-defence audit record is hypothetical.
+
+## Deployment verification
+
+Recorded after the GitHub Pages build following the redesign commit. A commit alone is not evidence of publication.
