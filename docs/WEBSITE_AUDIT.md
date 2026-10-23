@@ -91,7 +91,8 @@ Playwright with installed Chrome, 7 pages × 5 viewport widths (1440, 1180, 980,
 Recorded after the GitHub Pages build following the redesign commit.
 
 - Commit: `b0f5186` (`Finance-editorial redesign: 14-record archive, unified filters, all pages rebuilt, docs updated`).
-- Pages build status: `built`, updated 23 October 2026 11:03:13 UTC.
+- Latest build commit: `085b89e` (docs-only update of this audit after verification). Site HTML and assets are unchanged from `b0f5186`.
+- Pages build status: `built`, updated 23 October 2026 11:03:13 UTC for the redesign and again after the docs commit.
 - Live URL: https://bhojrajkamdi-1473.github.io/portfolio/
 - Live HTML title: `Bhojraj Kamdi - Finance Portfolio | Audit & Assurance, Financial Analysis, Equity Research`.
 - Live asset references: `assets/styles.css?v=6`, `assets/main.js?v=3`, matching the repository.
