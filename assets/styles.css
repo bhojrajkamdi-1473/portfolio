@@ -2606,3 +2606,77 @@ a.contact-value:hover .arrow { transform: translate(3px, -3px); }
   .index-table { min-width: 0; }
   .hero-proof { display: none; }
 }
+
+
+/* ---------- Project-only evidence status system ---------- */
+/* These badges are rendered only inside numbered project records (P01–P14). */
+.project-evidence-badge {
+  display: inline-flex;
+  align-items: center;
+  width: max-content;
+  max-width: 100%;
+  padding: 4px 8px;
+  border: 1px solid var(--rule, rgba(27, 28, 26, 0.18));
+  border-radius: 2px;
+  font-family: var(--sans);
+  font-size: 0.64rem;
+  font-weight: 600;
+  line-height: 1.35;
+  letter-spacing: 0.045em;
+  color: var(--ink-mute, #565349);
+  background: var(--paper-deep, #EFE9DD);
+  text-transform: uppercase;
+}
+.project-evidence-badge--direct {
+  color: #24483A;
+  border-color: rgba(36, 72, 58, 0.30);
+  background: rgba(36, 72, 58, 0.07);
+}
+.project-evidence-badge--folder {
+  color: #6F4B27;
+  border-color: rgba(111, 75, 39, 0.30);
+  background: rgba(168, 121, 73, 0.08);
+}
+.project-evidence-badge--none {
+  color: var(--ink-mute, #565349);
+  border-color: var(--rule, rgba(27, 28, 26, 0.18));
+  background: transparent;
+}
+.project-evidence-badge--unverified {
+  color: #6F4B27;
+  border-color: rgba(168, 121, 73, 0.42);
+  background: rgba(168, 121, 73, 0.09);
+}
+.project-evidence-badge--unresolved {
+  color: #754A39;
+  border-color: rgba(117, 74, 57, 0.28);
+  background: rgba(117, 74, 57, 0.06);
+}
+.record-rail .project-evidence-badge {
+  margin-top: 8px;
+  white-space: normal;
+}
+.ev-actions {
+  flex-wrap: wrap;
+}
+.ev-actions .project-evidence-badge {
+  margin-block: 3px;
+}
+.project-evidence-note {
+  margin: 16px 0 0;
+  padding: 12px 0;
+  border-top: 1px solid var(--rule-soft, rgba(27, 28, 26, 0.08));
+  color: var(--ink-mute, #565349);
+  font-size: 0.84rem;
+  line-height: 1.65;
+  max-width: 76ch;
+}
+@media (max-width: 760px) {
+  .record-rail .project-evidence-badge {
+    max-width: 100%;
+    overflow-wrap: anywhere;
+  }
+  .ev-actions {
+    gap: 8px;
+  }
+}

@@ -6,9 +6,9 @@
   "use strict";
 
   /* ------------------------------------------------------------------
-     REPORT LINKS — single source of truth.
-     Verified Google Drive / Docs URLs taken from data/portfolio-data.json.
-     NULL = no link exists (project 02 and 09 have no published report).
+     REPORT LINK REFERENCE — aligned with project evidence states.
+     Unresolved candidate mappings are intentionally null so they cannot
+     be presented as project-specific report links.
      ------------------------------------------------------------------ */
   var REPORTS = {
     p01: [
@@ -23,10 +23,15 @@
     p03: "https://docs.google.com/document/d/15KwRoxBXu1gl8Ad9i0O74e_oHOddEKci/edit?usp=drive_link&ouid=113586569177191721533&rtpof=true&sd=true",
     p04: "https://drive.google.com/file/d/1yhWyuGiuQRcqxmyDaGqeDLzm3GDpXk3U/view?usp=drive_link",
     p05: "https://docs.google.com/document/d/1-ST0W2-EolFUOAw8sI0Gc8BhKvERcQRi/edit?usp=drive_link&ouid=113586569177191721533&rtpof=true&sd=true",
-    p06: "https://drive.google.com/file/d/1MO-MuSvUr_hlUCkLot7nx0WQ8BYkMjTd/view?usp=drive_link",
-    p07: "https://drive.google.com/file/d/1lDHJDYOQM1cuGc7sDE9fE-yhjT6owPne/view?usp=drive_link",
-    p08: "https://drive.google.com/file/d/1vf_yJVM22RVhXzhebZaosspNmHFi_OS4/view?usp=sharing",
-    p09: null
+    p06: null,
+    p07: null,
+    p08: null,
+    p09: null,
+    p10: "https://docs.google.com/document/d/18jf2dV0_WyICSwVGcLA0dVei4VEEnBnk/edit?usp=drive_link",
+    p11: null,
+    p12: null,
+    p13: null,
+    p14: null
   };
 
   /* Labels for the three subcase reports under project 01.
