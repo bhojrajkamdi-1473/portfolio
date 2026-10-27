@@ -6,9 +6,9 @@
   "use strict";
 
   /* ------------------------------------------------------------------
-     REPORT LINKS — single source of truth.
-     Verified Google Drive / Docs URLs taken from data/portfolio-data.json.
-     NULL = no link exists (project 02 and 09 have no published report).
+     REPORT LINK REFERENCE — aligned with project evidence states.
+     Unresolved candidate mappings are intentionally null so they cannot
+     be presented as project-specific report links.
      ------------------------------------------------------------------ */
   var REPORTS = {
     p01: [
